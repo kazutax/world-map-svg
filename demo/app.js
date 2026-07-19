@@ -1,4 +1,9 @@
-const maps = [ "../map-full.svg", "../map-mobile.svg" ]
+const maps = [
+  "../map-full.svg",
+  "../map-mobile.svg",
+  "../map-full-japan-center.svg",
+  "../map-mobile-japan-center.svg",
+]
 const containers = document.querySelectorAll( '.map' )
 
 const visited = new Set()

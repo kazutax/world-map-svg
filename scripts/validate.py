@@ -19,7 +19,12 @@ import sys
 import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SVGS = ["map-full.svg", "map-mobile.svg"]
+SVGS = [
+    "map-full.svg",
+    "map-mobile.svg",
+    "map-full-japan-center.svg",
+    "map-mobile-japan-center.svg",
+]
 NS = {"svg": "http://www.w3.org/2000/svg"}
 
 # タップ可能とみなす最小サイズ (px)。これ未満でマーカーも無ければ不合格

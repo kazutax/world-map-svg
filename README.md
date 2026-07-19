@@ -15,9 +15,17 @@ Demo: https://kazutax.github.io/world-map-svg/demo/
 * 各グループは `<title>日本語名 / English name</title>` を持ちます。（例: `<title>日本 / Japan</title>`）
 * 投影法は **Equal Earth 図法**（面積比が保たれ、スマホでの実績マップ表示に向く）。
 * 極小の国（シンガポール、バチカン市国、モルディブ等）には、クリック・色塗りを可能にするための円マーカー `<circle class="country-marker">` をグループ内に付与してあります。マーカーはグループの `fill` を継承するため、国と同時に塗り替わります。
-* 2 種類の SVG ファイルがありますので、好みで使い分けてください。
+* 4 種類の SVG ファイルがありますので、好みで使い分けてください。
   * [map-full.svg](map-full.svg) - フルサイズの地図です（簡略化弱め・マーカー小さめ）。
   * [map-mobile.svg](map-mobile.svg) - モバイルデバイス用にアレンジした地図です（パス簡略化強め・極小国マーカー大きめ・線太め）。
+  * [map-full-japan-center.svg](map-full-japan-center.svg) - **日本中心（太平洋中心）版**。中央経線 150°E。
+  * [map-mobile-japan-center.svg](map-mobile-japan-center.svg) - 日本中心版のモバイル向けアレンジです。
+
+### 日本中心版について
+
+* 中央経線 150°E で再投影しており、日本がほぼ中央、アメリカ大陸が右側に配置されます。
+* 地図の切れ目は西経 30 度です。この経線をまたぐ**グリーンランド（デンマーク領）のみ左右両端に分割**されますが、どちらも同じ `DK` グループに属するため塗り分けには影響しません。
+* 元データが日付変更線（180 度線）で分割されているロシア（チュクチ半島・ウランゲリ島）とフィジーは、継ぎ目の境界線が見えないように接合しています（該当箇所のパスは `Z` で閉じず、塗りは暗黙の閉路で成立させています）。
 
 ### SVG の構造
 
@@ -56,6 +64,8 @@ Demo: https://kazutax.github.io/world-map-svg/demo/
 $ python3 scripts/validate.py
 map-full.svg: OK
 map-mobile.svg: OK
+map-full-japan-center.svg: OK
+map-mobile-japan-center.svg: OK
 report -> reports/tabinote-coverage.md
 ```
 
@@ -144,7 +154,10 @@ visitedCodes.forEach( ( code ) => {
 
 ### SwiftUI 等でのパース
 
-各国は `data-code` を持つ `<g>` 単位で完結しており、パスは `M` / `L` / `Z` のみで構成された単純なポリゴンです（曲線コマンドなし）。座標は `viewBox="0 0 2000 894"` 基準の絶対座標なので、XML パーサで `<g data-code>` ごとに `<path d>` と `<circle>` を取り出せばネイティブ描画できます。
+各国は `data-code` を持つ `<g>` 単位で完結しており、パスは `M` / `L` / `Z` のみで構成された単純なポリゴンです（曲線コマンドなし）。座標は `viewBox`（例: `0 0 2000 894`）基準の絶対座標なので、XML パーサで `<g data-code>` ごとに `<path d>` と `<circle>` を取り出せばネイティブ描画できます。
+
+* 1 つの `<path>` に複数のサブパス（`M ... Z M ... Z`）が含まれる場合があります。2 つ目以降は飛び地または穴（例: 南アフリカの中のレソト）で、`fill-rule="evenodd"` で解釈してください。
+* 日本中心版には `Z` で閉じないサブパスが少数あります（継ぎ目の線を消すための意図的なもの）。塗りつぶし時は始点と終点を結んで閉じてください（SVG の fill と同じ挙動）。
 
 ## 国の定義・収録範囲
 
