@@ -67,3 +67,12 @@ header, h2
   text-decoration: none;
   font-size: 14px;
 }
+
+.note
+{
+  max-width: 900px;
+  margin: -8px auto 16px;
+  padding: 0 16px;
+  color: #555555;
+  font-size: 14px;
+}
