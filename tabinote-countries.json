@@ -1,0 +1,1172 @@
+{
+  "source": "tabiNote production DB: location_tags (type = 'country', is_active = true)",
+  "fetched_at": "2026-07-19",
+  "count": 194,
+  "note": "このファイルが本リポジトリの国マスタ正本。SVG / countries.json はこの一覧に 100% 対応すること。",
+  "countries": [
+    {
+      "name": "アンドラ",
+      "name_en": "Andorra",
+      "country_code": "AD",
+      "continent": "Europe"
+    },
+    {
+      "name": "アラブ首長国連邦",
+      "name_en": "United Arab Emirates",
+      "country_code": "AE",
+      "continent": "Asia"
+    },
+    {
+      "name": "アフガニスタン",
+      "name_en": "Afghanistan",
+      "country_code": "AF",
+      "continent": "Asia"
+    },
+    {
+      "name": "アンティグア・バーブーダ",
+      "name_en": "Antigua and Barbuda",
+      "country_code": "AG",
+      "continent": "North America"
+    },
+    {
+      "name": "アルバニア",
+      "name_en": "Albania",
+      "country_code": "AL",
+      "continent": "Europe"
+    },
+    {
+      "name": "アンゴラ",
+      "name_en": "Angola",
+      "country_code": "AO",
+      "continent": "Africa"
+    },
+    {
+      "name": "アルゼンチン",
+      "name_en": "Argentina",
+      "country_code": "AR",
+      "continent": "South America"
+    },
+    {
+      "name": "オーストリア",
+      "name_en": "Austria",
+      "country_code": "AT",
+      "continent": "Europe"
+    },
+    {
+      "name": "オーストラリア",
+      "name_en": "Australia",
+      "country_code": "AU",
+      "continent": "Oceania"
+    },
+    {
+      "name": "アゼルバイジャン",
+      "name_en": "Azerbaijan",
+      "country_code": "AZ",
+      "continent": "Asia"
+    },
+    {
+      "name": "ボスニア・ヘルツェゴビナ",
+      "name_en": "Bosnia and Herzegovina",
+      "country_code": "BA",
+      "continent": "Europe"
+    },
+    {
+      "name": "バルバドス",
+      "name_en": "Barbados",
+      "country_code": "BB",
+      "continent": "North America"
+    },
+    {
+      "name": "バングラデシュ",
+      "name_en": "Bangladesh",
+      "country_code": "BD",
+      "continent": "Asia"
+    },
+    {
+      "name": "ベルギー",
+      "name_en": "Belgium",
+      "country_code": "BE",
+      "continent": "Europe"
+    },
+    {
+      "name": "ブルキナファソ",
+      "name_en": "Burkina Faso",
+      "country_code": "BF",
+      "continent": "Africa"
+    },
+    {
+      "name": "ブルガリア",
+      "name_en": "Bulgaria",
+      "country_code": "BG",
+      "continent": "Europe"
+    },
+    {
+      "name": "バーレーン",
+      "name_en": "Bahrain",
+      "country_code": "BH",
+      "continent": "Asia"
+    },
+    {
+      "name": "ブルンジ",
+      "name_en": "Burundi",
+      "country_code": "BI",
+      "continent": "Africa"
+    },
+    {
+      "name": "ベナン",
+      "name_en": "Benin",
+      "country_code": "BJ",
+      "continent": "Africa"
+    },
+    {
+      "name": "ブルネイ",
+      "name_en": "Brunei",
+      "country_code": "BN",
+      "continent": "Asia"
+    },
+    {
+      "name": "ボリビア",
+      "name_en": "Bolivia",
+      "country_code": "BO",
+      "continent": "South America"
+    },
+    {
+      "name": "ブラジル",
+      "name_en": "Brazil",
+      "country_code": "BR",
+      "continent": "South America"
+    },
+    {
+      "name": "バハマ",
+      "name_en": "Bahamas",
+      "country_code": "BS",
+      "continent": "North America"
+    },
+    {
+      "name": "ブータン",
+      "name_en": "Bhutan",
+      "country_code": "BT",
+      "continent": "Asia"
+    },
+    {
+      "name": "ボツワナ",
+      "name_en": "Botswana",
+      "country_code": "BW",
+      "continent": "Africa"
+    },
+    {
+      "name": "ベラルーシ",
+      "name_en": "Belarus",
+      "country_code": "BY",
+      "continent": "Europe"
+    },
+    {
+      "name": "ベリーズ",
+      "name_en": "Belize",
+      "country_code": "BZ",
+      "continent": "North America"
+    },
+    {
+      "name": "カナダ",
+      "name_en": "Canada",
+      "country_code": "CA",
+      "continent": "North America"
+    },
+    {
+      "name": "コンゴ民主共和国",
+      "name_en": "Democratic Republic of the Congo",
+      "country_code": "CD",
+      "continent": "Africa"
+    },
+    {
+      "name": "中央アフリカ",
+      "name_en": "Central African Republic",
+      "country_code": "CF",
+      "continent": "Africa"
+    },
+    {
+      "name": "コンゴ共和国",
+      "name_en": "Republic of the Congo",
+      "country_code": "CG",
+      "continent": "Africa"
+    },
+    {
+      "name": "スイス",
+      "name_en": "Switzerland",
+      "country_code": "CH",
+      "continent": "Europe"
+    },
+    {
+      "name": "コートジボワール",
+      "name_en": "Ivory Coast",
+      "country_code": "CI",
+      "continent": "Africa"
+    },
+    {
+      "name": "チリ",
+      "name_en": "Chile",
+      "country_code": "CL",
+      "continent": "South America"
+    },
+    {
+      "name": "カメルーン",
+      "name_en": "Cameroon",
+      "country_code": "CM",
+      "continent": "Africa"
+    },
+    {
+      "name": "中国",
+      "name_en": "China",
+      "country_code": "CN",
+      "continent": "Asia"
+    },
+    {
+      "name": "コロンビア",
+      "name_en": "Colombia",
+      "country_code": "CO",
+      "continent": "South America"
+    },
+    {
+      "name": "コスタリカ",
+      "name_en": "Costa Rica",
+      "country_code": "CR",
+      "continent": "North America"
+    },
+    {
+      "name": "キューバ",
+      "name_en": "Cuba",
+      "country_code": "CU",
+      "continent": "North America"
+    },
+    {
+      "name": "カーボベルデ",
+      "name_en": "Cape Verde",
+      "country_code": "CV",
+      "continent": "Africa"
+    },
+    {
+      "name": "キプロス",
+      "name_en": "Cyprus",
+      "country_code": "CY",
+      "continent": "Europe"
+    },
+    {
+      "name": "チェコ",
+      "name_en": "Czech Republic",
+      "country_code": "CZ",
+      "continent": "Europe"
+    },
+    {
+      "name": "ドイツ",
+      "name_en": "Germany",
+      "country_code": "DE",
+      "continent": "Europe"
+    },
+    {
+      "name": "ジブチ",
+      "name_en": "Djibouti",
+      "country_code": "DJ",
+      "continent": "Africa"
+    },
+    {
+      "name": "デンマーク",
+      "name_en": "Denmark",
+      "country_code": "DK",
+      "continent": "Europe"
+    },
+    {
+      "name": "ドミニカ",
+      "name_en": "Dominica",
+      "country_code": "DM",
+      "continent": "North America"
+    },
+    {
+      "name": "ドミニカ共和国",
+      "name_en": "Dominican Republic",
+      "country_code": "DO",
+      "continent": "North America"
+    },
+    {
+      "name": "アルジェリア",
+      "name_en": "Algeria",
+      "country_code": "DZ",
+      "continent": "Africa"
+    },
+    {
+      "name": "エクアドル",
+      "name_en": "Ecuador",
+      "country_code": "EC",
+      "continent": "South America"
+    },
+    {
+      "name": "エストニア",
+      "name_en": "Estonia",
+      "country_code": "EE",
+      "continent": "Europe"
+    },
+    {
+      "name": "エジプト",
+      "name_en": "Egypt",
+      "country_code": "EG",
+      "continent": "Africa"
+    },
+    {
+      "name": "エリトリア",
+      "name_en": "Eritrea",
+      "country_code": "ER",
+      "continent": "Africa"
+    },
+    {
+      "name": "スペイン",
+      "name_en": "Spain",
+      "country_code": "ES",
+      "continent": "Europe"
+    },
+    {
+      "name": "エチオピア",
+      "name_en": "Ethiopia",
+      "country_code": "ET",
+      "continent": "Africa"
+    },
+    {
+      "name": "フィンランド",
+      "name_en": "Finland",
+      "country_code": "FI",
+      "continent": "Europe"
+    },
+    {
+      "name": "フィジー",
+      "name_en": "Fiji",
+      "country_code": "FJ",
+      "continent": "Oceania"
+    },
+    {
+      "name": "ミクロネシア",
+      "name_en": "Micronesia",
+      "country_code": "FM",
+      "continent": "Oceania"
+    },
+    {
+      "name": "フランス",
+      "name_en": "France",
+      "country_code": "FR",
+      "continent": "Europe"
+    },
+    {
+      "name": "ガボン",
+      "name_en": "Gabon",
+      "country_code": "GA",
+      "continent": "Africa"
+    },
+    {
+      "name": "イギリス",
+      "name_en": "United Kingdom",
+      "country_code": "GB",
+      "continent": "Europe"
+    },
+    {
+      "name": "グレナダ",
+      "name_en": "Grenada",
+      "country_code": "GD",
+      "continent": "North America"
+    },
+    {
+      "name": "ジョージア",
+      "name_en": "Georgia",
+      "country_code": "GE",
+      "continent": "Asia"
+    },
+    {
+      "name": "ガーナ",
+      "name_en": "Ghana",
+      "country_code": "GH",
+      "continent": "Africa"
+    },
+    {
+      "name": "ガンビア",
+      "name_en": "Gambia",
+      "country_code": "GM",
+      "continent": "Africa"
+    },
+    {
+      "name": "ギニア",
+      "name_en": "Guinea",
+      "country_code": "GN",
+      "continent": "Africa"
+    },
+    {
+      "name": "赤道ギニア",
+      "name_en": "Equatorial Guinea",
+      "country_code": "GQ",
+      "continent": "Africa"
+    },
+    {
+      "name": "ギリシャ",
+      "name_en": "Greece",
+      "country_code": "GR",
+      "continent": "Europe"
+    },
+    {
+      "name": "グアテマラ",
+      "name_en": "Guatemala",
+      "country_code": "GT",
+      "continent": "North America"
+    },
+    {
+      "name": "ギニアビサウ",
+      "name_en": "Guinea-Bissau",
+      "country_code": "GW",
+      "continent": "Africa"
+    },
+    {
+      "name": "ガイアナ",
+      "name_en": "Guyana",
+      "country_code": "GY",
+      "continent": "South America"
+    },
+    {
+      "name": "ホンジュラス",
+      "name_en": "Honduras",
+      "country_code": "HN",
+      "continent": "North America"
+    },
+    {
+      "name": "クロアチア",
+      "name_en": "Croatia",
+      "country_code": "HR",
+      "continent": "Europe"
+    },
+    {
+      "name": "ハイチ",
+      "name_en": "Haiti",
+      "country_code": "HT",
+      "continent": "North America"
+    },
+    {
+      "name": "ハンガリー",
+      "name_en": "Hungary",
+      "country_code": "HU",
+      "continent": "Europe"
+    },
+    {
+      "name": "インドネシア",
+      "name_en": "Indonesia",
+      "country_code": "ID",
+      "continent": "Asia"
+    },
+    {
+      "name": "アイルランド",
+      "name_en": "Ireland",
+      "country_code": "IE",
+      "continent": "Europe"
+    },
+    {
+      "name": "イスラエル",
+      "name_en": "Israel",
+      "country_code": "IL",
+      "continent": "Asia"
+    },
+    {
+      "name": "インド",
+      "name_en": "India",
+      "country_code": "IN",
+      "continent": "Asia"
+    },
+    {
+      "name": "イラク",
+      "name_en": "Iraq",
+      "country_code": "IQ",
+      "continent": "Asia"
+    },
+    {
+      "name": "イラン",
+      "name_en": "Iran",
+      "country_code": "IR",
+      "continent": "Asia"
+    },
+    {
+      "name": "アイスランド",
+      "name_en": "Iceland",
+      "country_code": "IS",
+      "continent": "Europe"
+    },
+    {
+      "name": "イタリア",
+      "name_en": "Italy",
+      "country_code": "IT",
+      "continent": "Europe"
+    },
+    {
+      "name": "ジャマイカ",
+      "name_en": "Jamaica",
+      "country_code": "JM",
+      "continent": "North America"
+    },
+    {
+      "name": "ヨルダン",
+      "name_en": "Jordan",
+      "country_code": "JO",
+      "continent": "Asia"
+    },
+    {
+      "name": "日本",
+      "name_en": "Japan",
+      "country_code": "JP",
+      "continent": "Asia"
+    },
+    {
+      "name": "ケニア",
+      "name_en": "Kenya",
+      "country_code": "KE",
+      "continent": "Africa"
+    },
+    {
+      "name": "キルギス",
+      "name_en": "Kyrgyzstan",
+      "country_code": "KG",
+      "continent": "Asia"
+    },
+    {
+      "name": "カンボジア",
+      "name_en": "Cambodia",
+      "country_code": "KH",
+      "continent": "Asia"
+    },
+    {
+      "name": "キリバス",
+      "name_en": "Kiribati",
+      "country_code": "KI",
+      "continent": "Oceania"
+    },
+    {
+      "name": "コモロ",
+      "name_en": "Comoros",
+      "country_code": "KM",
+      "continent": "Africa"
+    },
+    {
+      "name": "セントキッツ・ネイビス",
+      "name_en": "Saint Kitts and Nevis",
+      "country_code": "KN",
+      "continent": "North America"
+    },
+    {
+      "name": "北朝鮮",
+      "name_en": "North Korea",
+      "country_code": "KP",
+      "continent": "Asia"
+    },
+    {
+      "name": "韓国",
+      "name_en": "South Korea",
+      "country_code": "KR",
+      "continent": "Asia"
+    },
+    {
+      "name": "クウェート",
+      "name_en": "Kuwait",
+      "country_code": "KW",
+      "continent": "Asia"
+    },
+    {
+      "name": "カザフスタン",
+      "name_en": "Kazakhstan",
+      "country_code": "KZ",
+      "continent": "Asia"
+    },
+    {
+      "name": "ラオス",
+      "name_en": "Laos",
+      "country_code": "LA",
+      "continent": "Asia"
+    },
+    {
+      "name": "レバノン",
+      "name_en": "Lebanon",
+      "country_code": "LB",
+      "continent": "Asia"
+    },
+    {
+      "name": "セントルシア",
+      "name_en": "Saint Lucia",
+      "country_code": "LC",
+      "continent": "North America"
+    },
+    {
+      "name": "リヒテンシュタイン",
+      "name_en": "Liechtenstein",
+      "country_code": "LI",
+      "continent": "Europe"
+    },
+    {
+      "name": "スリランカ",
+      "name_en": "Sri Lanka",
+      "country_code": "LK",
+      "continent": "Asia"
+    },
+    {
+      "name": "リベリア",
+      "name_en": "Liberia",
+      "country_code": "LR",
+      "continent": "Africa"
+    },
+    {
+      "name": "レソト",
+      "name_en": "Lesotho",
+      "country_code": "LS",
+      "continent": "Africa"
+    },
+    {
+      "name": "リトアニア",
+      "name_en": "Lithuania",
+      "country_code": "LT",
+      "continent": "Europe"
+    },
+    {
+      "name": "ルクセンブルク",
+      "name_en": "Luxembourg",
+      "country_code": "LU",
+      "continent": "Europe"
+    },
+    {
+      "name": "ラトビア",
+      "name_en": "Latvia",
+      "country_code": "LV",
+      "continent": "Europe"
+    },
+    {
+      "name": "リビア",
+      "name_en": "Libya",
+      "country_code": "LY",
+      "continent": "Africa"
+    },
+    {
+      "name": "モロッコ",
+      "name_en": "Morocco",
+      "country_code": "MA",
+      "continent": "Africa"
+    },
+    {
+      "name": "モナコ",
+      "name_en": "Monaco",
+      "country_code": "MC",
+      "continent": "Europe"
+    },
+    {
+      "name": "モルドバ",
+      "name_en": "Moldova",
+      "country_code": "MD",
+      "continent": "Europe"
+    },
+    {
+      "name": "モンテネグロ",
+      "name_en": "Montenegro",
+      "country_code": "ME",
+      "continent": "Europe"
+    },
+    {
+      "name": "マダガスカル",
+      "name_en": "Madagascar",
+      "country_code": "MG",
+      "continent": "Africa"
+    },
+    {
+      "name": "マーシャル諸島",
+      "name_en": "Marshall Islands",
+      "country_code": "MH",
+      "continent": "Oceania"
+    },
+    {
+      "name": "北マケドニア",
+      "name_en": "North Macedonia",
+      "country_code": "MK",
+      "continent": "Europe"
+    },
+    {
+      "name": "マリ",
+      "name_en": "Mali",
+      "country_code": "ML",
+      "continent": "Africa"
+    },
+    {
+      "name": "ミャンマー",
+      "name_en": "Myanmar",
+      "country_code": "MM",
+      "continent": "Asia"
+    },
+    {
+      "name": "モンゴル",
+      "name_en": "Mongolia",
+      "country_code": "MN",
+      "continent": "Asia"
+    },
+    {
+      "name": "モーリタニア",
+      "name_en": "Mauritania",
+      "country_code": "MR",
+      "continent": "Africa"
+    },
+    {
+      "name": "マルタ",
+      "name_en": "Malta",
+      "country_code": "MT",
+      "continent": "Europe"
+    },
+    {
+      "name": "モーリシャス",
+      "name_en": "Mauritius",
+      "country_code": "MU",
+      "continent": "Africa"
+    },
+    {
+      "name": "モルディブ",
+      "name_en": "Maldives",
+      "country_code": "MV",
+      "continent": "Asia"
+    },
+    {
+      "name": "マラウィ",
+      "name_en": "Malawi",
+      "country_code": "MW",
+      "continent": "Africa"
+    },
+    {
+      "name": "メキシコ",
+      "name_en": "Mexico",
+      "country_code": "MX",
+      "continent": "North America"
+    },
+    {
+      "name": "マレーシア",
+      "name_en": "Malaysia",
+      "country_code": "MY",
+      "continent": "Asia"
+    },
+    {
+      "name": "モザンビーク",
+      "name_en": "Mozambique",
+      "country_code": "MZ",
+      "continent": "Africa"
+    },
+    {
+      "name": "ナミビア",
+      "name_en": "Namibia",
+      "country_code": "NA",
+      "continent": "Africa"
+    },
+    {
+      "name": "ニジェール",
+      "name_en": "Niger",
+      "country_code": "NE",
+      "continent": "Africa"
+    },
+    {
+      "name": "ナイジェリア",
+      "name_en": "Nigeria",
+      "country_code": "NG",
+      "continent": "Africa"
+    },
+    {
+      "name": "ニカラグア",
+      "name_en": "Nicaragua",
+      "country_code": "NI",
+      "continent": "North America"
+    },
+    {
+      "name": "オランダ",
+      "name_en": "Netherlands",
+      "country_code": "NL",
+      "continent": "Europe"
+    },
+    {
+      "name": "ノルウェー",
+      "name_en": "Norway",
+      "country_code": "NO",
+      "continent": "Europe"
+    },
+    {
+      "name": "ネパール",
+      "name_en": "Nepal",
+      "country_code": "NP",
+      "continent": "Asia"
+    },
+    {
+      "name": "ナウル",
+      "name_en": "Nauru",
+      "country_code": "NR",
+      "continent": "Oceania"
+    },
+    {
+      "name": "ニュージーランド",
+      "name_en": "New Zealand",
+      "country_code": "NZ",
+      "continent": "Oceania"
+    },
+    {
+      "name": "オマーン",
+      "name_en": "Oman",
+      "country_code": "OM",
+      "continent": "Asia"
+    },
+    {
+      "name": "パナマ",
+      "name_en": "Panama",
+      "country_code": "PA",
+      "continent": "North America"
+    },
+    {
+      "name": "ペルー",
+      "name_en": "Peru",
+      "country_code": "PE",
+      "continent": "South America"
+    },
+    {
+      "name": "パプアニューギニア",
+      "name_en": "Papua New Guinea",
+      "country_code": "PG",
+      "continent": "Oceania"
+    },
+    {
+      "name": "フィリピン",
+      "name_en": "Philippines",
+      "country_code": "PH",
+      "continent": "Asia"
+    },
+    {
+      "name": "パキスタン",
+      "name_en": "Pakistan",
+      "country_code": "PK",
+      "continent": "Asia"
+    },
+    {
+      "name": "ポーランド",
+      "name_en": "Poland",
+      "country_code": "PL",
+      "continent": "Europe"
+    },
+    {
+      "name": "パレスチナ",
+      "name_en": "Palestine",
+      "country_code": "PS",
+      "continent": "Asia"
+    },
+    {
+      "name": "ポルトガル",
+      "name_en": "Portugal",
+      "country_code": "PT",
+      "continent": "Europe"
+    },
+    {
+      "name": "パラオ",
+      "name_en": "Palau",
+      "country_code": "PW",
+      "continent": "Oceania"
+    },
+    {
+      "name": "パラグアイ",
+      "name_en": "Paraguay",
+      "country_code": "PY",
+      "continent": "South America"
+    },
+    {
+      "name": "カタール",
+      "name_en": "Qatar",
+      "country_code": "QA",
+      "continent": "Asia"
+    },
+    {
+      "name": "ルーマニア",
+      "name_en": "Romania",
+      "country_code": "RO",
+      "continent": "Europe"
+    },
+    {
+      "name": "セルビア",
+      "name_en": "Serbia",
+      "country_code": "RS",
+      "continent": "Europe"
+    },
+    {
+      "name": "ロシア",
+      "name_en": "Russia",
+      "country_code": "RU",
+      "continent": "Europe"
+    },
+    {
+      "name": "ルワンダ",
+      "name_en": "Rwanda",
+      "country_code": "RW",
+      "continent": "Africa"
+    },
+    {
+      "name": "サウジアラビア",
+      "name_en": "Saudi Arabia",
+      "country_code": "SA",
+      "continent": "Asia"
+    },
+    {
+      "name": "ソロモン諸島",
+      "name_en": "Solomon Islands",
+      "country_code": "SB",
+      "continent": "Oceania"
+    },
+    {
+      "name": "セーシェル",
+      "name_en": "Seychelles",
+      "country_code": "SC",
+      "continent": "Africa"
+    },
+    {
+      "name": "スーダン",
+      "name_en": "Sudan",
+      "country_code": "SD",
+      "continent": "Africa"
+    },
+    {
+      "name": "スウェーデン",
+      "name_en": "Sweden",
+      "country_code": "SE",
+      "continent": "Europe"
+    },
+    {
+      "name": "シンガポール",
+      "name_en": "Singapore",
+      "country_code": "SG",
+      "continent": "Asia"
+    },
+    {
+      "name": "スロベニア",
+      "name_en": "Slovenia",
+      "country_code": "SI",
+      "continent": "Europe"
+    },
+    {
+      "name": "スロバキア",
+      "name_en": "Slovakia",
+      "country_code": "SK",
+      "continent": "Europe"
+    },
+    {
+      "name": "シエラレオネ",
+      "name_en": "Sierra Leone",
+      "country_code": "SL",
+      "continent": "Africa"
+    },
+    {
+      "name": "サンマリノ",
+      "name_en": "San Marino",
+      "country_code": "SM",
+      "continent": "Europe"
+    },
+    {
+      "name": "セネガル",
+      "name_en": "Senegal",
+      "country_code": "SN",
+      "continent": "Africa"
+    },
+    {
+      "name": "ソマリア",
+      "name_en": "Somalia",
+      "country_code": "SO",
+      "continent": "Africa"
+    },
+    {
+      "name": "スリナム",
+      "name_en": "Suriname",
+      "country_code": "SR",
+      "continent": "South America"
+    },
+    {
+      "name": "南スーダン",
+      "name_en": "South Sudan",
+      "country_code": "SS",
+      "continent": "Africa"
+    },
+    {
+      "name": "サントメ・プリンシペ",
+      "name_en": "São Tomé and Príncipe",
+      "country_code": "ST",
+      "continent": "Africa"
+    },
+    {
+      "name": "エルサルバドル",
+      "name_en": "El Salvador",
+      "country_code": "SV",
+      "continent": "North America"
+    },
+    {
+      "name": "シリア",
+      "name_en": "Syria",
+      "country_code": "SY",
+      "continent": "Asia"
+    },
+    {
+      "name": "エスワティニ",
+      "name_en": "Eswatini",
+      "country_code": "SZ",
+      "continent": "Africa"
+    },
+    {
+      "name": "チャド",
+      "name_en": "Chad",
+      "country_code": "TD",
+      "continent": "Africa"
+    },
+    {
+      "name": "トーゴ",
+      "name_en": "Togo",
+      "country_code": "TG",
+      "continent": "Africa"
+    },
+    {
+      "name": "タイ",
+      "name_en": "Thailand",
+      "country_code": "TH",
+      "continent": "Asia"
+    },
+    {
+      "name": "タジキスタン",
+      "name_en": "Tajikistan",
+      "country_code": "TJ",
+      "continent": "Asia"
+    },
+    {
+      "name": "東ティモール",
+      "name_en": "East Timor",
+      "country_code": "TL",
+      "continent": "Asia"
+    },
+    {
+      "name": "トルクメニスタン",
+      "name_en": "Turkmenistan",
+      "country_code": "TM",
+      "continent": "Asia"
+    },
+    {
+      "name": "チュニジア",
+      "name_en": "Tunisia",
+      "country_code": "TN",
+      "continent": "Africa"
+    },
+    {
+      "name": "トンガ",
+      "name_en": "Tonga",
+      "country_code": "TO",
+      "continent": "Oceania"
+    },
+    {
+      "name": "トルコ",
+      "name_en": "Turkey",
+      "country_code": "TR",
+      "continent": "Asia"
+    },
+    {
+      "name": "トリニダード・トバゴ",
+      "name_en": "Trinidad and Tobago",
+      "country_code": "TT",
+      "continent": "North America"
+    },
+    {
+      "name": "ツバル",
+      "name_en": "Tuvalu",
+      "country_code": "TV",
+      "continent": "Oceania"
+    },
+    {
+      "name": "タンザニア",
+      "name_en": "Tanzania",
+      "country_code": "TZ",
+      "continent": "Africa"
+    },
+    {
+      "name": "ウクライナ",
+      "name_en": "Ukraine",
+      "country_code": "UA",
+      "continent": "Europe"
+    },
+    {
+      "name": "ウガンダ",
+      "name_en": "Uganda",
+      "country_code": "UG",
+      "continent": "Africa"
+    },
+    {
+      "name": "アメリカ",
+      "name_en": "United States",
+      "country_code": "US",
+      "continent": "North America"
+    },
+    {
+      "name": "ウルグアイ",
+      "name_en": "Uruguay",
+      "country_code": "UY",
+      "continent": "South America"
+    },
+    {
+      "name": "ウズベキスタン",
+      "name_en": "Uzbekistan",
+      "country_code": "UZ",
+      "continent": "Asia"
+    },
+    {
+      "name": "バチカン市国",
+      "name_en": "Vatican City",
+      "country_code": "VA",
+      "continent": "Europe"
+    },
+    {
+      "name": "セントビンセント・グレナディーン",
+      "name_en": "Saint Vincent and the Grenadines",
+      "country_code": "VC",
+      "continent": "North America"
+    },
+    {
+      "name": "ベネズエラ",
+      "name_en": "Venezuela",
+      "country_code": "VE",
+      "continent": "South America"
+    },
+    {
+      "name": "ベトナム",
+      "name_en": "Vietnam",
+      "country_code": "VN",
+      "continent": "Asia"
+    },
+    {
+      "name": "バヌアツ",
+      "name_en": "Vanuatu",
+      "country_code": "VU",
+      "continent": "Oceania"
+    },
+    {
+      "name": "サモア",
+      "name_en": "Samoa",
+      "country_code": "WS",
+      "continent": "Oceania"
+    },
+    {
+      "name": "イエメン",
+      "name_en": "Yemen",
+      "country_code": "YE",
+      "continent": "Asia"
+    },
+    {
+      "name": "南アフリカ",
+      "name_en": "South Africa",
+      "country_code": "ZA",
+      "continent": "Africa"
+    },
+    {
+      "name": "ザンビア",
+      "name_en": "Zambia",
+      "country_code": "ZM",
+      "continent": "Africa"
+    },
+    {
+      "name": "ジンバブエ",
+      "name_en": "Zimbabwe",
+      "country_code": "ZW",
+      "continent": "Africa"
+    }
+  ]
+}

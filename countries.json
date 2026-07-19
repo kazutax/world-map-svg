@@ -1,0 +1,1784 @@
+[
+  {
+    "code": "AD",
+    "name_ja": "アンドラ",
+    "name_en": "Andorra",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AE",
+    "name_ja": "アラブ首長国連邦",
+    "name_en": "United Arab Emirates",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AF",
+    "name_ja": "アフガニスタン",
+    "name_en": "Afghanistan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AG",
+    "name_ja": "アンティグア・バーブーダ",
+    "name_en": "Antigua and Barbuda",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AL",
+    "name_ja": "アルバニア",
+    "name_en": "Albania",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AM",
+    "name_ja": "アルメニア",
+    "name_en": "Armenia",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": false,
+    "notes": "tabiNote 国マスタ外。class='territory' として中立表示 (色塗り対象外)"
+  },
+  {
+    "code": "AO",
+    "name_ja": "アンゴラ",
+    "name_en": "Angola",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AR",
+    "name_ja": "アルゼンチン",
+    "name_en": "Argentina",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AT",
+    "name_ja": "オーストリア",
+    "name_en": "Austria",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AU",
+    "name_ja": "オーストラリア",
+    "name_en": "Australia",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "AZ",
+    "name_ja": "アゼルバイジャン",
+    "name_en": "Azerbaijan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BA",
+    "name_ja": "ボスニア・ヘルツェゴビナ",
+    "name_en": "Bosnia and Herzegovina",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BB",
+    "name_ja": "バルバドス",
+    "name_en": "Barbados",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BD",
+    "name_ja": "バングラデシュ",
+    "name_en": "Bangladesh",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BE",
+    "name_ja": "ベルギー",
+    "name_en": "Belgium",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BF",
+    "name_ja": "ブルキナファソ",
+    "name_en": "Burkina Faso",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BG",
+    "name_ja": "ブルガリア",
+    "name_en": "Bulgaria",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BH",
+    "name_ja": "バーレーン",
+    "name_en": "Bahrain",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BI",
+    "name_ja": "ブルンジ",
+    "name_en": "Burundi",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BJ",
+    "name_ja": "ベナン",
+    "name_en": "Benin",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BN",
+    "name_ja": "ブルネイ",
+    "name_en": "Brunei",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BO",
+    "name_ja": "ボリビア",
+    "name_en": "Bolivia",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BR",
+    "name_ja": "ブラジル",
+    "name_en": "Brazil",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BS",
+    "name_ja": "バハマ",
+    "name_en": "Bahamas",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BT",
+    "name_ja": "ブータン",
+    "name_en": "Bhutan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BW",
+    "name_ja": "ボツワナ",
+    "name_en": "Botswana",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BY",
+    "name_ja": "ベラルーシ",
+    "name_en": "Belarus",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "BZ",
+    "name_ja": "ベリーズ",
+    "name_en": "Belize",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CA",
+    "name_ja": "カナダ",
+    "name_en": "Canada",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CD",
+    "name_ja": "コンゴ民主共和国",
+    "name_en": "Democratic Republic of the Congo",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CF",
+    "name_ja": "中央アフリカ",
+    "name_en": "Central African Republic",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CG",
+    "name_ja": "コンゴ共和国",
+    "name_en": "Republic of the Congo",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CH",
+    "name_ja": "スイス",
+    "name_en": "Switzerland",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CI",
+    "name_ja": "コートジボワール",
+    "name_en": "Ivory Coast",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CL",
+    "name_ja": "チリ",
+    "name_en": "Chile",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CM",
+    "name_ja": "カメルーン",
+    "name_en": "Cameroon",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CN",
+    "name_ja": "中国",
+    "name_en": "China",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CO",
+    "name_ja": "コロンビア",
+    "name_en": "Colombia",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CR",
+    "name_ja": "コスタリカ",
+    "name_en": "Costa Rica",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CU",
+    "name_ja": "キューバ",
+    "name_en": "Cuba",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CV",
+    "name_ja": "カーボベルデ",
+    "name_en": "Cape Verde",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CY",
+    "name_ja": "キプロス",
+    "name_en": "Cyprus",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "CZ",
+    "name_ja": "チェコ",
+    "name_en": "Czech Republic",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "DE",
+    "name_ja": "ドイツ",
+    "name_en": "Germany",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "DJ",
+    "name_ja": "ジブチ",
+    "name_en": "Djibouti",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "DK",
+    "name_ja": "デンマーク",
+    "name_en": "Denmark",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "DM",
+    "name_ja": "ドミニカ",
+    "name_en": "Dominica",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "DO",
+    "name_ja": "ドミニカ共和国",
+    "name_en": "Dominican Republic",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "DZ",
+    "name_ja": "アルジェリア",
+    "name_en": "Algeria",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "EC",
+    "name_ja": "エクアドル",
+    "name_en": "Ecuador",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "EE",
+    "name_ja": "エストニア",
+    "name_en": "Estonia",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "EG",
+    "name_ja": "エジプト",
+    "name_en": "Egypt",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "EH",
+    "name_ja": "西サハラ",
+    "name_en": "Western Sahara",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": false,
+    "notes": "tabiNote 国マスタ外。class='territory' として中立表示 (色塗り対象外)"
+  },
+  {
+    "code": "ER",
+    "name_ja": "エリトリア",
+    "name_en": "Eritrea",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ES",
+    "name_ja": "スペイン",
+    "name_en": "Spain",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ET",
+    "name_ja": "エチオピア",
+    "name_en": "Ethiopia",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "FI",
+    "name_ja": "フィンランド",
+    "name_en": "Finland",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "FJ",
+    "name_ja": "フィジー",
+    "name_en": "Fiji",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "FM",
+    "name_ja": "ミクロネシア",
+    "name_en": "Micronesia",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "FR",
+    "name_ja": "フランス",
+    "name_en": "France",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GA",
+    "name_ja": "ガボン",
+    "name_en": "Gabon",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GB",
+    "name_ja": "イギリス",
+    "name_en": "United Kingdom",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GD",
+    "name_ja": "グレナダ",
+    "name_en": "Grenada",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GE",
+    "name_ja": "ジョージア",
+    "name_en": "Georgia",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GH",
+    "name_ja": "ガーナ",
+    "name_en": "Ghana",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GM",
+    "name_ja": "ガンビア",
+    "name_en": "Gambia",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GN",
+    "name_ja": "ギニア",
+    "name_en": "Guinea",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GQ",
+    "name_ja": "赤道ギニア",
+    "name_en": "Equatorial Guinea",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GR",
+    "name_ja": "ギリシャ",
+    "name_en": "Greece",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GT",
+    "name_ja": "グアテマラ",
+    "name_en": "Guatemala",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GW",
+    "name_ja": "ギニアビサウ",
+    "name_en": "Guinea-Bissau",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "GY",
+    "name_ja": "ガイアナ",
+    "name_en": "Guyana",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "HN",
+    "name_ja": "ホンジュラス",
+    "name_en": "Honduras",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "HR",
+    "name_ja": "クロアチア",
+    "name_en": "Croatia",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "HT",
+    "name_ja": "ハイチ",
+    "name_en": "Haiti",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "HU",
+    "name_ja": "ハンガリー",
+    "name_en": "Hungary",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ID",
+    "name_ja": "インドネシア",
+    "name_en": "Indonesia",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "IE",
+    "name_ja": "アイルランド",
+    "name_en": "Ireland",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "IL",
+    "name_ja": "イスラエル",
+    "name_en": "Israel",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "IN",
+    "name_ja": "インド",
+    "name_en": "India",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "IQ",
+    "name_ja": "イラク",
+    "name_en": "Iraq",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "IR",
+    "name_ja": "イラン",
+    "name_en": "Iran",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "IS",
+    "name_ja": "アイスランド",
+    "name_en": "Iceland",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "IT",
+    "name_ja": "イタリア",
+    "name_en": "Italy",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "JM",
+    "name_ja": "ジャマイカ",
+    "name_en": "Jamaica",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "JO",
+    "name_ja": "ヨルダン",
+    "name_en": "Jordan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "JP",
+    "name_ja": "日本",
+    "name_en": "Japan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KE",
+    "name_ja": "ケニア",
+    "name_en": "Kenya",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KG",
+    "name_ja": "キルギス",
+    "name_en": "Kyrgyzstan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KH",
+    "name_ja": "カンボジア",
+    "name_en": "Cambodia",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KI",
+    "name_ja": "キリバス",
+    "name_en": "Kiribati",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KM",
+    "name_ja": "コモロ",
+    "name_en": "Comoros",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KN",
+    "name_ja": "セントキッツ・ネイビス",
+    "name_en": "Saint Kitts and Nevis",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KP",
+    "name_ja": "北朝鮮",
+    "name_en": "North Korea",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KR",
+    "name_ja": "韓国",
+    "name_en": "South Korea",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KW",
+    "name_ja": "クウェート",
+    "name_en": "Kuwait",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "KZ",
+    "name_ja": "カザフスタン",
+    "name_en": "Kazakhstan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LA",
+    "name_ja": "ラオス",
+    "name_en": "Laos",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LB",
+    "name_ja": "レバノン",
+    "name_en": "Lebanon",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LC",
+    "name_ja": "セントルシア",
+    "name_en": "Saint Lucia",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LI",
+    "name_ja": "リヒテンシュタイン",
+    "name_en": "Liechtenstein",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LK",
+    "name_ja": "スリランカ",
+    "name_en": "Sri Lanka",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LR",
+    "name_ja": "リベリア",
+    "name_en": "Liberia",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LS",
+    "name_ja": "レソト",
+    "name_en": "Lesotho",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LT",
+    "name_ja": "リトアニア",
+    "name_en": "Lithuania",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LU",
+    "name_ja": "ルクセンブルク",
+    "name_en": "Luxembourg",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LV",
+    "name_ja": "ラトビア",
+    "name_en": "Latvia",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "LY",
+    "name_ja": "リビア",
+    "name_en": "Libya",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MA",
+    "name_ja": "モロッコ",
+    "name_en": "Morocco",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MC",
+    "name_ja": "モナコ",
+    "name_en": "Monaco",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MD",
+    "name_ja": "モルドバ",
+    "name_en": "Moldova",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ME",
+    "name_ja": "モンテネグロ",
+    "name_en": "Montenegro",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MG",
+    "name_ja": "マダガスカル",
+    "name_en": "Madagascar",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MH",
+    "name_ja": "マーシャル諸島",
+    "name_en": "Marshall Islands",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MK",
+    "name_ja": "北マケドニア",
+    "name_en": "North Macedonia",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ML",
+    "name_ja": "マリ",
+    "name_en": "Mali",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MM",
+    "name_ja": "ミャンマー",
+    "name_en": "Myanmar",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MN",
+    "name_ja": "モンゴル",
+    "name_en": "Mongolia",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MR",
+    "name_ja": "モーリタニア",
+    "name_en": "Mauritania",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MT",
+    "name_ja": "マルタ",
+    "name_en": "Malta",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MU",
+    "name_ja": "モーリシャス",
+    "name_en": "Mauritius",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MV",
+    "name_ja": "モルディブ",
+    "name_en": "Maldives",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MW",
+    "name_ja": "マラウィ",
+    "name_en": "Malawi",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MX",
+    "name_ja": "メキシコ",
+    "name_en": "Mexico",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MY",
+    "name_ja": "マレーシア",
+    "name_en": "Malaysia",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "MZ",
+    "name_ja": "モザンビーク",
+    "name_en": "Mozambique",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NA",
+    "name_ja": "ナミビア",
+    "name_en": "Namibia",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NE",
+    "name_ja": "ニジェール",
+    "name_en": "Niger",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NG",
+    "name_ja": "ナイジェリア",
+    "name_en": "Nigeria",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NI",
+    "name_ja": "ニカラグア",
+    "name_en": "Nicaragua",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NL",
+    "name_ja": "オランダ",
+    "name_en": "Netherlands",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NO",
+    "name_ja": "ノルウェー",
+    "name_en": "Norway",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NP",
+    "name_ja": "ネパール",
+    "name_en": "Nepal",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NR",
+    "name_ja": "ナウル",
+    "name_en": "Nauru",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "NZ",
+    "name_ja": "ニュージーランド",
+    "name_en": "New Zealand",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "OM",
+    "name_ja": "オマーン",
+    "name_en": "Oman",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PA",
+    "name_ja": "パナマ",
+    "name_en": "Panama",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PE",
+    "name_ja": "ペルー",
+    "name_en": "Peru",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PG",
+    "name_ja": "パプアニューギニア",
+    "name_en": "Papua New Guinea",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PH",
+    "name_ja": "フィリピン",
+    "name_en": "Philippines",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PK",
+    "name_ja": "パキスタン",
+    "name_en": "Pakistan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PL",
+    "name_ja": "ポーランド",
+    "name_en": "Poland",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PS",
+    "name_ja": "パレスチナ",
+    "name_en": "Palestine",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PT",
+    "name_ja": "ポルトガル",
+    "name_en": "Portugal",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PW",
+    "name_ja": "パラオ",
+    "name_en": "Palau",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "PY",
+    "name_ja": "パラグアイ",
+    "name_en": "Paraguay",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "QA",
+    "name_ja": "カタール",
+    "name_en": "Qatar",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "RO",
+    "name_ja": "ルーマニア",
+    "name_en": "Romania",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "RS",
+    "name_ja": "セルビア",
+    "name_en": "Serbia",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "RU",
+    "name_ja": "ロシア",
+    "name_en": "Russia",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "RW",
+    "name_ja": "ルワンダ",
+    "name_en": "Rwanda",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SA",
+    "name_ja": "サウジアラビア",
+    "name_en": "Saudi Arabia",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SB",
+    "name_ja": "ソロモン諸島",
+    "name_en": "Solomon Islands",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SC",
+    "name_ja": "セーシェル",
+    "name_en": "Seychelles",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SD",
+    "name_ja": "スーダン",
+    "name_en": "Sudan",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SE",
+    "name_ja": "スウェーデン",
+    "name_en": "Sweden",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SG",
+    "name_ja": "シンガポール",
+    "name_en": "Singapore",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SI",
+    "name_ja": "スロベニア",
+    "name_en": "Slovenia",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SK",
+    "name_ja": "スロバキア",
+    "name_en": "Slovakia",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SL",
+    "name_ja": "シエラレオネ",
+    "name_en": "Sierra Leone",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SM",
+    "name_ja": "サンマリノ",
+    "name_en": "San Marino",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SN",
+    "name_ja": "セネガル",
+    "name_en": "Senegal",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SO",
+    "name_ja": "ソマリア",
+    "name_en": "Somalia",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SR",
+    "name_ja": "スリナム",
+    "name_en": "Suriname",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SS",
+    "name_ja": "南スーダン",
+    "name_en": "South Sudan",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ST",
+    "name_ja": "サントメ・プリンシペ",
+    "name_en": "São Tomé and Príncipe",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SV",
+    "name_ja": "エルサルバドル",
+    "name_en": "El Salvador",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SY",
+    "name_ja": "シリア",
+    "name_en": "Syria",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "SZ",
+    "name_ja": "エスワティニ",
+    "name_en": "Eswatini",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TD",
+    "name_ja": "チャド",
+    "name_en": "Chad",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TG",
+    "name_ja": "トーゴ",
+    "name_en": "Togo",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TH",
+    "name_ja": "タイ",
+    "name_en": "Thailand",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TJ",
+    "name_ja": "タジキスタン",
+    "name_en": "Tajikistan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TL",
+    "name_ja": "東ティモール",
+    "name_en": "East Timor",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TM",
+    "name_ja": "トルクメニスタン",
+    "name_en": "Turkmenistan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TN",
+    "name_ja": "チュニジア",
+    "name_en": "Tunisia",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TO",
+    "name_ja": "トンガ",
+    "name_en": "Tonga",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TR",
+    "name_ja": "トルコ",
+    "name_en": "Turkey",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TT",
+    "name_ja": "トリニダード・トバゴ",
+    "name_en": "Trinidad and Tobago",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TV",
+    "name_ja": "ツバル",
+    "name_en": "Tuvalu",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "TW",
+    "name_ja": "台湾",
+    "name_en": "Taiwan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": false,
+    "notes": "tabiNote 国マスタ外。class='territory' として中立表示 (色塗り対象外)"
+  },
+  {
+    "code": "TZ",
+    "name_ja": "タンザニア",
+    "name_en": "Tanzania",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "UA",
+    "name_ja": "ウクライナ",
+    "name_en": "Ukraine",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "UG",
+    "name_ja": "ウガンダ",
+    "name_en": "Uganda",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "US",
+    "name_ja": "アメリカ",
+    "name_en": "United States",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "UY",
+    "name_ja": "ウルグアイ",
+    "name_en": "Uruguay",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "UZ",
+    "name_ja": "ウズベキスタン",
+    "name_en": "Uzbekistan",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "VA",
+    "name_ja": "バチカン市国",
+    "name_en": "Vatican City",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "VC",
+    "name_ja": "セントビンセント・グレナディーン",
+    "name_en": "Saint Vincent and the Grenadines",
+    "region": "North America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "VE",
+    "name_ja": "ベネズエラ",
+    "name_en": "Venezuela",
+    "region": "South America",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "VN",
+    "name_ja": "ベトナム",
+    "name_en": "Vietnam",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "VU",
+    "name_ja": "バヌアツ",
+    "name_en": "Vanuatu",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "WS",
+    "name_ja": "サモア",
+    "name_en": "Samoa",
+    "region": "Oceania",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "XK",
+    "name_ja": "コソボ",
+    "name_en": "Kosovo",
+    "region": "Europe",
+    "included_in_svg": true,
+    "tabinote_matched": false,
+    "notes": "tabiNote 国マスタ外。class='territory' として中立表示 (色塗り対象外)"
+  },
+  {
+    "code": "YE",
+    "name_ja": "イエメン",
+    "name_en": "Yemen",
+    "region": "Asia",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ZA",
+    "name_ja": "南アフリカ",
+    "name_en": "South Africa",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ZM",
+    "name_ja": "ザンビア",
+    "name_en": "Zambia",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  },
+  {
+    "code": "ZW",
+    "name_ja": "ジンバブエ",
+    "name_en": "Zimbabwe",
+    "region": "Africa",
+    "included_in_svg": true,
+    "tabinote_matched": true,
+    "notes": ""
+  }
+]

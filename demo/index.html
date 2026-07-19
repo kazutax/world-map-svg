@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>World Map SVG - Demo</title>
+</head>
+<body>
+
+  <header>
+    <h1>World Map SVG</h1>
+    <p>
+      国にマウスオーバーで色が変わり、クリックで「訪問済み」に塗れます。
+      <a href="https://github.com/geolonia/japanese-prefectures">japanese-prefectures</a> の世界地図版です。
+    </p>
+    <p class="status">
+      <span id="hover-info">－</span> ／ 訪問 <span id="visited-count">0</span> / <span id="total-count">194</span> カ国
+    </p>
+  </header>
+
+  <h2>map-full.svg</h2>
+  <div class="map"></div>
+
+  <h2>map-mobile.svg</h2>
+  <div class="map"></div>
+
+  <a class="forkme" href="https://github.com/kazutax/world-map-svg">Fork me on GitHub</a>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body
+{
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+  margin: 0 0 64px;
+}
+
+header, h2
+{
+  max-width: 900px;
+  margin: 16px auto;
+  padding: 0 16px;
+}
+
+.status
+{
+  font-weight: bold;
+}
+
+.map
+{
+  width: 900px;
+  max-width: 95%;
+  height: auto;
+  margin: 16px auto;
+  border: 1px solid #555555;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.world-svg-map
+{
+  width: 100%;
+}
+
+.world-svg-map .country
+{
+  fill: #f7f7f7;
+  stroke: #666666;
+  cursor: pointer;
+}
+
+.world-svg-map .country:hover
+{
+  fill: #ffcc80;
+}
+
+.world-svg-map .country.visited
+{
+  fill: #e8927c;
+}
+
+/* マスタ外の中立地域 (台湾・コソボ・西サハラ・アルメニア) */
+.world-svg-map .territory
+{
+  fill: #e0e0e0;
+  stroke: #999999;
+}
+
+.forkme
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #333333;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
