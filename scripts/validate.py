@@ -151,7 +151,7 @@ def main():
         lines.append("")
         lines.append(f"- マスタ対応 country グループ: {s['countries']} / {len(master)}")
         lines.append(f"- マスタ外 territory グループ: {s['territories']} "
-                     "(TW 台湾 / XK コソボ / EH 西サハラ / AM アルメニア)")
+                     "(TW 台湾 / XK コソボ / EH 西サハラ)")
         lines.append(f"- 極小国マーカー付与: {len(s['markers'])} カ国")
         lines.append(f"  - {', '.join(s['markers'])}")
         if all_errors[svg]:
@@ -163,11 +163,10 @@ def main():
         lines.append("")
     lines.append("## 特記事項")
     lines.append("")
-    lines.append("- **アルメニア (AM)**: 国連加盟国だが tabiNote 国マスタ 194 件に存在しない"
-                 "ため、マスタ正の原則に従い色塗り対象外の `territory` として収録。"
-                 "マスタに追加された場合は `scripts/build.py` の `TERRITORIES` から "
-                 "`ARM` を削除して再ビルドすれば `country` に昇格する。")
-    lines.append("- マスタ外 territory (TW/XK/EH/AM) は `class=\"territory\"` "
+    lines.append("- **アルメニア (AM)**: 当初 tabiNote 国マスタに欠落していたが、"
+                 "2026-07-19 にマスタへ追加（migration 067、194 → 195 件）。"
+                 "本リポジトリでも territory から `country`（色塗り対象）に昇格済み。")
+    lines.append("- マスタ外 territory (TW/XK/EH) は `class=\"territory\"` "
                  "`data-master=\"false\"` を持ち、`.country` セレクタでは選択されない。")
     lines.append("- 属領・海外領土 (グリーンランド、プエルトリコ、ニューカレドニア等) は"
                  "本国のグループに吸収済み。")

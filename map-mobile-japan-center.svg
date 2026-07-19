@@ -26,6 +26,10 @@
         <title>アルバニア / Albania</title>
         <path d="M370.3 185.7L367.3 189.8L367.1 194.2L358.5 199.9L359.3 197.5L358.0 195.1L364.5 187.4L365.3 183.7L369.4 180.7L371.4 183.4L370.4 185.7Z"/>
       </g>
+      <g class="armenia asia country" data-code="AM" fill="#EEEEEE" fill-rule="evenodd" stroke="#000000" stroke-width="0.8" stroke-linejoin="round">
+        <title>アルメニア / Armenia</title>
+        <path d="M488.3 189.5L487.9 190.9L489.8 192.2L488.0 195.0L489.6 196.4L486.8 198.0L490.1 200.7L488.0 205.2L486.0 205.3L486.4 200.7L484.5 201.2L480.8 197.6L477.7 197.1L480.0 190.6L488.2 189.5Z"/>
+      </g>
       <g class="angola africa country" data-code="AO" fill="#EEEEEE" fill-rule="evenodd" stroke="#000000" stroke-width="0.8" stroke-linejoin="round">
         <title>アンゴラ / Angola</title>
         <path d="M239.3 521.5L236.1 524.7L236.8 529.8L235.2 530.0L233.6 524.4L237.5 519.7L239.1 521.4Z"/>
@@ -1049,10 +1053,6 @@
       <g class="zimbabwe africa country" data-code="ZW" fill="#EEEEEE" fill-rule="evenodd" stroke="#000000" stroke-width="0.8" stroke-linejoin="round">
         <title>ジンバブエ / Zimbabwe</title>
         <path d="M322.5 619.8L326.5 621.3L332.4 621.0L335.1 613.6L339.7 610.1L339.6 606.3L344.0 603.7L347.1 603.9L347.7 606.6L352.5 606.7L362.9 611.6L366.1 623.9L365.1 628.3L368.9 636.2L367.1 640.4L368.4 645.5L364.9 652.7L353.5 651.9L350.9 649.1L344.8 647.4L341.0 639.7L338.6 639.6L337.4 636.6L330.6 632.6L322.4 620.4Z"/>
-      </g>
-      <g class="armenia asia territory" data-code="AM" data-master="false" fill="#EEEEEE" fill-rule="evenodd" stroke="#000000" stroke-width="0.8" stroke-linejoin="round">
-        <title>アルメニア / Armenia</title>
-        <path d="M488.3 189.5L487.9 190.9L489.8 192.2L488.0 195.0L489.6 196.4L486.8 198.0L490.1 200.7L488.0 205.2L486.0 205.3L486.4 200.7L484.5 201.2L480.8 197.6L477.7 197.1L480.0 190.6L488.2 189.5Z"/>
       </g>
       <g class="western-sahara africa territory" data-code="EH" data-master="false" fill="#EEEEEE" fill-rule="evenodd" stroke="#000000" stroke-width="0.8" stroke-linejoin="round">
         <title>西サハラ / Western Sahara</title>

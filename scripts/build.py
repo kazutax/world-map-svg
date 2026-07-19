@@ -29,9 +29,6 @@ TERRITORIES = {
     "TWN": ("TW", "台湾", "Taiwan", "Asia"),
     "KOS": ("XK", "コソボ", "Kosovo", "Europe"),
     "SAH": ("EH", "西サハラ", "Western Sahara", "Africa"),
-    # アルメニアは国連加盟国だが tabiNote 国マスタ (194 件) に存在しないため、
-    # マスタ正の原則に従い色塗り対象外の territory として収録する (地図の穴を防ぐ)
-    "ARM": ("AM", "アルメニア", "Armenia", "Asia"),
 }
 # 実効支配地域などをマスタ国へ吸収するオーバーライド (ADM0_A3 -> ISO alpha-2)
 MERGE_OVERRIDES = {

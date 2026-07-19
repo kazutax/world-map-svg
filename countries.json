@@ -50,8 +50,8 @@
     "name_en": "Armenia",
     "region": "Asia",
     "included_in_svg": true,
-    "tabinote_matched": false,
-    "notes": "tabiNote 国マスタ外。class='territory' として中立表示 (色塗り対象外)"
+    "tabinote_matched": true,
+    "notes": ""
   },
   {
     "code": "AO",

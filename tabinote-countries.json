@@ -1,7 +1,7 @@
 {
   "source": "tabiNote production DB: location_tags (type = 'country', is_active = true)",
   "fetched_at": "2026-07-19",
-  "count": 194,
+  "count": 195,
   "note": "このファイルが本リポジトリの国マスタ正本。SVG / countries.json はこの一覧に 100% 対応すること。",
   "countries": [
     {
@@ -33,6 +33,12 @@
       "name_en": "Albania",
       "country_code": "AL",
       "continent": "Europe"
+    },
+    {
+      "name": "アルメニア",
+      "name_en": "Armenia",
+      "country_code": "AM",
+      "continent": "Asia"
     },
     {
       "name": "アンゴラ",

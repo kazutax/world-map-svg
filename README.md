@@ -52,10 +52,10 @@ Demo: https://kazutax.github.io/world-map-svg/demo/
 
 ## tabiNote 国マスタ完全対応（必須要件）
 
-この SVG は、tabiNote アプリの国マスタ（`location_tags` の `type = 'country'`、**194 カ国**）への完全対応を必須要件としています。
+この SVG は、tabiNote アプリの国マスタ（`location_tags` の `type = 'country'`、**195 カ国**）への完全対応を必須要件としています。
 
 * 正本: [tabinote-countries.json](tabinote-countries.json)（`name` / `name_en` / `country_code` / `continent`）
-* マスタ全 194 カ国について、SVG 上に `country` グループが存在し、`data-code` が `country_code` と一致し、`<title>` の日本語名がマスタの `name` と一致します。
+* マスタ全 195 カ国について、SVG 上に `country` グループが存在し、`data-code` が `country_code` と一致し、`<title>` の日本語名がマスタの `name` と一致します。
 * 突合結果: [reports/tabinote-coverage.md](reports/tabinote-coverage.md)（**欠落 0 / code 不一致 0 / 名前解決不能 0**）
 
 ### 検証手順
@@ -161,11 +161,11 @@ visitedCodes.forEach( ( code ) => {
 
 ## 国の定義・収録範囲
 
-* **採用集合は tabiNote 国マスタ（194 カ国）に一致させています。** 国連の一般定義ではなくマスタが正です。
-  * マスタには国連加盟 193 カ国のうち 192 カ国 + パレスチナ (PS) + バチカン市国 (VA) が含まれます。
-* **マスタ外の中立地域（4 件）**: 地図上の空白（穴）を避けるため、以下は `class="territory"` `data-master="false"` として収録していますが、`.country` セレクタでは選択されず、マスタの塗り分けを阻害しません。
-  * 台湾 (TW) / コソボ (XK) / 西サハラ (EH) / **アルメニア (AM)**
-  * アルメニアは国連加盟国ですが、2026-07 時点の tabiNote 国マスタに存在しないため territory 扱いです。マスタに追加された際は `scripts/build.py` の `TERRITORIES` から `ARM` を外して再ビルドしてください。
+* **採用集合は tabiNote 国マスタ（195 カ国）に一致させています。** 国連の一般定義ではなくマスタが正です。
+  * マスタには国連加盟 193 カ国すべて + パレスチナ (PS) + バチカン市国 (VA) が含まれます。
+* **マスタ外の中立地域（3 件）**: 地図上の空白（穴）を避けるため、以下は `class="territory"` `data-master="false"` として収録していますが、`.country` セレクタでは選択されず、マスタの塗り分けを阻害しません。
+  * 台湾 (TW) / コソボ (XK) / 西サハラ (EH)
+  * アルメニア (AM) は当初マスタに欠落しており territory 扱いでしたが、2026-07-19 のマスタ更新（194 → 195 カ国）に伴い色塗り対象の `country` に昇格しました。
 * **属領・海外領土は本国に含めています。** 例: グリーンランド→デンマーク (DK)、プエルトリコ→アメリカ (US)、ニューカレドニア・仏領ポリネシア→フランス (FR)、フォークランド諸島→イギリス (GB)。マスタ外の独立パスは追加していません。
 * 実効支配地域の扱い: 北キプロス→キプロス (CY)、ソマリランド→ソマリア (SO) に吸収。
 * **省略**: 南極大陸（マスタに AQ が無く、縦横比と塗り UX を優先）、ビル・タウィール（無主地）、南シナ海の岩礁等。
