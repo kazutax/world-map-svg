@@ -192,6 +192,10 @@ $ python3 scripts/validate.py  # tabiNote 国マスタ完全対応チェック
 * **本リポジトリの SVG・スクリプト・メタデータ**: [MIT License](LICENSE)。商用アプリへの同梱が可能です。
 * 参考元（仕様の正）: [geolonia/japanese-prefectures](https://github.com/geolonia/japanese-prefectures)（同リポジトリの SVG データ自体は GFDL のため流用しておらず、属性設計・使い勝手のみを踏襲しています）。
 
+## 免責事項
+
+本リポジトリの地図は「訪問国の塗り分け」を目的とした簡略化された表現であり、国境線・地域区分・名称は [Natural Earth](https://www.naturalearthdata.com/) のデフォルト解釈に基づきます。**国家の承認・帰属・領土に関するいかなる政治的立場も表明するものではありません。**係争地・地位未確定の地域（台湾・コソボ・西サハラ等）は、地図の連続性のために中立地域（`territory`）として描画しているものであり、その地位に関する見解を示すものではありません。
+
 ## 既知の制約
 
 * 国境線は Natural Earth のデフォルト解釈に基づく簡略表現であり、厳密な地政学地図ではありません（「制覇塗り絵」用途を優先）。
