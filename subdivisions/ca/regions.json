@@ -1,0 +1,245 @@
+{
+  "country": "CA",
+  "country_name_ja": "カナダ",
+  "country_name_en": "Canada",
+  "division_ja": "10 州と 3 準州",
+  "division_en": "10 provinces and 3 territories",
+  "denominator": 13,
+  "id_scheme": "ISO 3166-2:CA",
+  "source": {
+    "name": "Natural Earth 1:10m Cultural Vectors, Admin 1 – States, Provinces (large lakes removed)",
+    "publisher": "Natural Earth",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "download_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_1_states_provinces_lakes.geojson",
+    "version": "v5.1.2 (ne_10m_admin_1_states_provinces_lakes)",
+    "license": "Public Domain",
+    "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+    "retrieved": "2026-10-13",
+    "sha256": "ff5e330cf097a639cc413ab849814d605ba76307235e3a9eba5d1aa0491beba1"
+  },
+  "projection": {
+    "main": {
+      "type": "conicEqualArea",
+      "parallels": [
+        50,
+        70
+      ],
+      "rotate": 96,
+      "center": [
+        0,
+        62
+      ],
+      "scale": 1153.327962,
+      "translate": [
+        429.674502,
+        438.944313
+      ]
+    },
+    "viewBox": [
+      0,
+      0,
+      1000,
+      839
+    ]
+  },
+  "excluded": [],
+  "notes": [],
+  "regions": [
+    {
+      "code": "CA-AB",
+      "country": "CA",
+      "name_ja": "アルバータ州",
+      "name_en": "Alberta",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-632"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-BC",
+      "country": "CA",
+      "name_ja": "ブリティッシュコロンビア州",
+      "name_en": "British Columbia",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-633"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-MB",
+      "country": "CA",
+      "name_ja": "マニトバ州",
+      "name_en": "Manitoba",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-630"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-NB",
+      "country": "CA",
+      "name_ja": "ニューブランズウィック州",
+      "name_en": "New Brunswick",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-684"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-NL",
+      "country": "CA",
+      "name_ja": "ニューファンドランド・ラブラドール州",
+      "name_en": "Newfoundland and Labrador",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-686"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-NS",
+      "country": "CA",
+      "name_ja": "ノバスコシア州",
+      "name_en": "Nova Scotia",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-685"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-NT",
+      "country": "CA",
+      "name_ja": "ノースウェスト準州",
+      "name_en": "Northwest Territories",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-635"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-NU",
+      "country": "CA",
+      "name_ja": "ヌナブト準州",
+      "name_en": "Nunavut",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-634"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-ON",
+      "country": "CA",
+      "name_ja": "オンタリオ州",
+      "name_en": "Ontario",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-682"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-PE",
+      "country": "CA",
+      "name_ja": "プリンスエドワードアイランド州",
+      "name_en": "Prince Edward Island",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-687"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": true
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-QC",
+      "country": "CA",
+      "name_ja": "ケベック州",
+      "name_en": "Quebec",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-683"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-SK",
+      "country": "CA",
+      "name_ja": "サスカチュワン州",
+      "name_en": "Saskatchewan",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-631"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CA-YT",
+      "country": "CA",
+      "name_ja": "ユーコン準州",
+      "name_en": "Yukon",
+      "included_in_svg": true,
+      "source_ids": [
+        "CAN-636"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    }
+  ]
+}

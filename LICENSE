@@ -24,3 +24,17 @@ SOFTWARE.
 
 Map geometry is derived from Natural Earth (https://www.naturalearthdata.com/),
 1:10m Cultural Vectors, Admin 0 - Countries, which is in the public domain.
+
+Subdivision maps under subdivisions/ are derived from the following geographic
+data, whose terms apply in addition to (and separately from) the MIT License
+above:
+
+- us, ca, au, nz, ie: Natural Earth 1:10m Admin 1 - States, Provinces (v5.1.2),
+  public domain.
+- gb: Source: Office for National Statistics licensed under the Open Government
+  Licence v.3.0. Contains OS data (c) Crown copyright and database right 2025.
+  (International Territorial Level 2 (January 2025) Boundaries UK BUC)
+- sg: Contains information from Master Plan 2025 Region Boundary (No Sea)
+  accessed on 2026-10-13 from data.gov.sg which is made available under the
+  terms of the Singapore Open Data Licence version 1.0
+  https://data.gov.sg/open-data-licence

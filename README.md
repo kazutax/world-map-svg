@@ -5,6 +5,8 @@
 
 Demo: https://kazutax.github.io/world-map-svg/demo/
 
+国の中の区画（米国の州、英国の ITL2 地域など 7 か国）の SVG もあります → [国の中の区画](#国の中の区画subdivisions)（Demo: https://kazutax.github.io/world-map-svg/demo/subdivisions.html）
+
 ![map-full.svg](map-full.svg)
 
 ## 仕様
@@ -190,6 +192,7 @@ $ python3 scripts/validate.py  # tabiNote 国マスタ完全対応チェック
 
 * **地理データ**: [Natural Earth](https://www.naturalearthdata.com/)（1:10m Admin 0 - Countries）。Natural Earth はパブリックドメインで、商用利用・改変・再配布・アプリへの同梱がすべて自由です。クレジット表記も不要ですが、本リポジトリでは出典として明記します。
 * **本リポジトリの SVG・スクリプト・メタデータ**: [MIT License](LICENSE)。商用アプリへの同梱が可能です。
+* 国の中の区画（`subdivisions/`）の地理データの出典とライセンスは、[国の中の区画](#国の中の区画subdivisions) の節を参照してください（英国とシンガポールは帰属表示が必要です）。
 * 参考元（仕様の正）: [geolonia/japanese-prefectures](https://github.com/geolonia/japanese-prefectures)（同リポジトリの SVG データ自体は GFDL のため流用しておらず、属性設計・使い勝手のみを踏襲しています）。
 
 ## 免責事項
@@ -202,3 +205,153 @@ $ python3 scripts/validate.py  # tabiNote 国マスタ完全対応チェック
 * パス簡略化（Douglas-Peucker）により、小さな島嶼の一部は省略されています（各国最大のポリゴンは必ず保持）。
 * カリブ海・南太平洋の極小国マーカーは近接して重なる場合があります。
 * 縦横比の都合上、南極大陸は収録していません。
+
+## 国の中の区画（subdivisions）
+
+訪問した州・地域を塗る「国の中の達成地図」用に、国ごとの区画 SVG を `subdivisions/` に置いています。世界地図（`map-*.svg`）とは別ファイルで、世界地図の `<g class="country">` には手を加えていません。日本の 47 都道府県は収録しません（[geolonia/japanese-prefectures](https://github.com/geolonia/japanese-prefectures) を使ってください）。
+
+Demo: https://kazutax.github.io/world-map-svg/demo/subdivisions.html
+
+### ファイルの場所
+
+```text
+subdivisions/
+  {code}/map-mobile.svg   アプリ向け（簡略化強め・線太め・マーカー大きめ）
+  {code}/map-full.svg     フル版
+  {code}/regions.json     区分の一覧（分母・ID・名称・出典・投影・除外した領域）
+  README.md               国ごとのコード表（自動生成）
+```
+
+### 収録国と分母
+
+分母は下表で固定です。より細かい行政界への分割や、より粗い統合はしません。件数は `scripts/validate_subdivisions.py` で機械検証しています。
+
+| 国 | `{code}` | 区分 | 分母 | `data-code`（安定 ID） | 出典 | 地理データのライセンス |
+|---|---|---|---|---|---|---|
+| アメリカ | `us` | 50 州とコロンビア特別区。アラスカ・ハワイを含み、プエルトリコなどの海外領域は含めない | 51 | ISO 3166-2:US（`US-CA`、`US-DC`） | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
+| イギリス | `gb` | ONS の ITL2（2025 年 1 月の分類）。England の細分を含み、北アイルランド（`TLN0`）を含む | 46 | ONS の ITL 2025 コード（`TLC3` … `TLN0`） | ONS ITL2 (January 2025) BUC | Open Government Licence v3.0 |
+| カナダ | `ca` | 10 州と 3 準州 | 13 | ISO 3166-2:CA（`CA-ON`） | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
+| オーストラリア | `au` | 6 州、ACT、NT。クリスマス島などの海外領域とジャービス湾特別地域は含めない | 8 | ISO 3166-2:AU（`AU-NSW`） | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
+| ニュージーランド | `nz` | 16 の地方（regional council の区域）。チャタム諸島は含めない | 16 | ISO 3166-2:NZ（`NZ-AUK`）。Stats NZ の地方コードを `stats_nz_code` に併記 | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
+| アイルランド | `ie` | 伝統的な 26 県。ダブリン・ティペラリーは各 1 県。北アイルランドは含めない | 26 | ISO 3166-2:IE（`IE-D`、`IE-TA`） | Natural Earth Admin 1 v5.1.2（自治体単位を県へ統合） | パブリックドメイン |
+| シンガポール | `sg` | URA の 5 地域。計画区域（55）は使わない | 5 | `SG-CR` / `SG-ER` / `SG-NR` / `SG-NE` / `SG-WR` | URA Master Plan 2025 Region Boundary (No Sea) | Singapore Open Data Licence v1.0 |
+
+* 北アイルランドは `gb` にだけ入っています（`ie` には入れていません）。
+* 各国の区分の一覧（`data-code`・日本語名・英語名）は [subdivisions/README.md](subdivisions/README.md) と各 `regions.json` にあります。
+* **韓国（`kr`）は未収録です。** 2026-07-01 に光州広域市と全羅南道が統合されて「全南光州統合特別市」が発足し、公式の第 1 級区分が 17 から 16 になりました。予定していた分母 17 と一致しないため、分母が確定するまで収録を保留しています（区分を独自に統合することはしていません）。
+
+### SVG の構造
+
+世界地図と同じ読み方（`data-code` を持つ `<g>` ごとに `<title>`・`<path>`・`<circle>`）でパースできます。
+
+```xml
+<svg class="subdivision-svg-map" data-country="US" viewBox="0 0 1000 594" xmlns="http://www.w3.org/2000/svg">
+  <title>アメリカ合衆国：50 州とコロンビア特別区 / United States: 50 states and the District of Columbia</title>
+  <desc>（出典とライセンスの表示）</desc>
+  <g class="svg-map">
+    <g class="regions">
+      <g class="california region" data-code="US-CA" data-country="US" fill="#EEEEEE" fill-rule="evenodd"
+         stroke="#000000" stroke-width="1.0" stroke-linejoin="round">
+        <title>カリフォルニア州 / California</title>
+        <path d="M... Z M... Z"/>
+      </g>
+      <!-- 画面で指せないほど小さい区分はマーカー付き -->
+      <g class="district-of-columbia region" data-code="US-DC" data-country="US" ...>
+        <title>ワシントンD.C. / District of Columbia</title>
+        <path d="M... Z"/>
+        <circle class="region-marker" cx="..." cy="..." r="10.0" stroke-width="1.0"/>
+      </g>
+    </g>
+    <!-- us のみ: アラスカ・ハワイのはめ込みの区切り線（data-code を持たない） -->
+    <g class="boundary-line" fill="none" stroke="#999999" ...>
+      <path d="M... L..."/>
+    </g>
+  </g>
+</svg>
+```
+
+* 1 区分が 1 つの `<g class="region">` です。`class="country"` は付けていないので、世界地図の `.country` セレクタとは混ざりません。
+* `data-code` は上表の安定 ID、`data-country` は国の ISO 3166-1 alpha-2 です。区分は `[data-code]` または `.region` で取得してください（`boundary-line` は区分ではありません）。
+* `<title>` は「日本語名 / English name」です（例: `<title>カリフォルニア州 / California</title>`）。
+* パスは `M` / `L` / `Z` のみ（曲線なし）。1 区分につき `<path>` は 1 つで、飛び地と穴は同じ `<path>` のサブパスです。`fill-rule="evenodd"` で解釈してください。
+* 隣り合う区分の共有境界は同じ簡略化結果を使っているので、区分の間に隙間や重なりはできません。
+* 小さい区分（最大ポリゴンの面積の平方根が mobile で 14、full で 7 未満）には `<circle class="region-marker">` を付けています。マーカーは `fill` を持たず親の `<g>` から継承するので、区分と同時に塗られます。マーカー同士が重なる場合は半径を縮めています。
+  * mobile: `US-DC`, `US-RI`, `TLI3`, `TLI4`, `CA-PE`, `AU-ACT`, `NZ-NSN`
+  * full: `US-DC`, `TLI3`
+* 投影は国ごとの正積円錐図法（Albers）で、その国が viewBox（長辺 1000）いっぱいに収まります。世界地図の Equal Earth は使っていません。投影のパラメータは `regions.json` の `projection` にあります。
+* アメリカは本土の左下にアラスカ（面積 0.35 倍）とハワイをはめ込んでいます（d3-geo の `geoAlbersUsa` と同じ配置）。日本地図の沖縄の別枠と同じ配慮で、本土とは重ねていません。
+* full と mobile は同じ viewBox です。mobile はパスの簡略化を強め、線を太く、マーカーを大きくしています。各区分の最大のポリゴンは必ず残しています。
+
+### regions.json
+
+```jsonc
+{
+  "country": "US", "denominator": 51, "id_scheme": "ISO 3166-2:US",
+  "source": { "name": "...", "url": "...", "version": "...", "license": "...", "attribution": "...", "retrieved": "...", "sha256": "..." },
+  "projection": { "main": { ... }, "insets": { "US-AK": { ... }, "US-HI": { ... } }, "viewBox": [0, 0, 1000, 594] },
+  "excluded": [ { "name_ja": "プエルトリコ", "name_en": "Puerto Rico", "code": "US-PR", "reason": "..." } ],
+  "notes": [ "..." ],
+  "regions": [
+    { "code": "US-CA", "country": "US", "name_ja": "カリフォルニア州", "name_en": "California",
+      "included_in_svg": true, "source_ids": ["USA-3521"], "marker": { "full": false, "mobile": false }, "notes": "" }
+  ]
+}
+```
+
+`regions` の長さは分母と一致します。`excluded` は分母に数えないと決めた領域、`notes` は統合や描画の省略など国ごとの判断の記録です。
+
+### 検証
+
+```console
+$ python3 scripts/validate_subdivisions.py
+us: OK (US 分母 51)
+gb: OK (GB 分母 46)
+kr: 未完了 (未収録) - 2026-07-01 に光州広域市と全羅南道が統合され ...
+ca: OK (CA 分母 13)
+au: OK (AU 分母 8)
+nz: OK (NZ 分母 16)
+ie: OK (IE 分母 26)
+sg: OK (SG 分母 5)
+report -> reports/subdivisions-coverage.md
+```
+
+期待値（分母・安定 ID の集合・除外する領域）は検証スクリプトの中に独立して持っており、次のどれかがあると失敗します（終了コード 1）。
+
+* 区分数が分母と違う
+* `data-code` の欠落・重複、安定 ID の期待集合や `regions.json` との不一致
+* `<title>` が `regions.json` の「name_ja / name_en」と違う
+* 塗れない区分（パスもマーカーも無い、または小さすぎてマーカーも無い）
+* 区画ファイルに `class="country"` が混ざっている
+* 除外すると決めた領域（米国・豪州の海外領域、チャタム諸島、`ie` に入った北アイルランド、シンガポールの計画区域 55、英国の旧 41 地域のコードなど）が分母に数えられている。代表地点（サンフアン、ベルファストなど）を投影して、どの区分にも含まれないことも確かめます
+* `M` / `L` / `Z` 以外のパスコマンド、`evenodd` でない、マーカーが親の `fill` を継承しない
+* mobile が簡略化されていない・線が太くない・マーカーが大きくない、各区分の最大ポリゴンが失われている
+* アメリカのはめ込み（アラスカ・ハワイ）が本土と重なる、区切り線が区分を横切る
+
+世界地図の検証（`python3 scripts/validate.py`）とは別のスクリプトです。両方とも成功する状態を保っています。
+
+### ビルド・再生成
+
+```console
+$ python3 scripts/build_subdivisions.py         # 全か国（data/ に元データが無ければダウンロード）
+$ python3 scripts/build_subdivisions.py us ie   # 指定した国だけ
+$ python3 scripts/validate_subdivisions.py
+```
+
+依存は Python 3.9+ の標準ライブラリのみです。元データ（約 45MB）はリポジトリに含めません。
+
+### 出典・ライセンス（区画）
+
+本リポジトリのファイル（SVG・JSON・スクリプト）は [MIT License](LICENSE) です。ただし区画の境界は次の地理データに由来し、その利用条件は MIT とは別にかかります。いずれも商用アプリへの同梱と改変が認められています。
+
+| 国 | データ | 版 | ライセンス | 帰属表示 |
+|---|---|---|---|---|
+| `us` `ca` `au` `nz` `ie` | [Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/) 1:10m Admin 1 – States, Provinces（大きな湖を除いた版） | v5.1.2 | パブリックドメイン | 不要（本リポジトリでは出典として明記） |
+| `gb` | [ONS](https://geoportal.statistics.gov.uk/) International Territorial Level 2 (January 2025) Boundaries UK BUC | ITL 2025 | [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) | 必要: 「Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2025」 |
+| `sg` | [URA](https://data.gov.sg/datasets/d_4ce0038f7ac689652350bb91b7fb92ed/view) Master Plan 2025 Region Boundary (No Sea)（data.gov.sg） | Master Plan 2025 | [Singapore Open Data Licence v1.0](https://data.gov.sg/open-data-licence) | 必要: 「Contains information from Master Plan 2025 Region Boundary (No Sea) accessed on 2026-10-13 from data.gov.sg which is made available under the terms of the Singapore Open Data Licence version 1.0 https://data.gov.sg/open-data-licence」 |
+
+* `gb` と `sg` を使うアプリやサイトでは、上の帰属表示を利用者に見える場所（クレジット画面など）に出してください。Singapore Open Data Licence は、URA などの公的機関が推奨・承認しているように見せることも禁じています。
+* 帰属表示の文言は各 SVG の `<desc>` と `regions.json` の `source.attribution` にも入れています。
+
+### 免責事項（区画）
+
+区画の地図は「訪問した地域の塗り分け」のための簡略図です。境界線・区分・名称は上記の出典データの解釈に基づき、**国家・地域の境界、帰属、地位に関するいかなる政治的立場も表明するものではありません。**北アイルランドを `gb` に収めているのは英国統計局の地域区分（ITL）に、アイルランドの 26 県は ISO 3166-2:IE に従った、塗り分けの都合による整理です。離島の一部（北西ハワイ諸島、ロードハウ島、マッコーリー島など）は、区分には属したまま描画を省略しています。

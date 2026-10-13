@@ -1,0 +1,768 @@
+{
+  "country": "GB",
+  "country_name_ja": "イギリス",
+  "country_name_en": "United Kingdom",
+  "division_ja": "ITL2 (2025) の 46 地域",
+  "division_en": "46 ITL2 regions (ITL 2025)",
+  "denominator": 46,
+  "id_scheme": "ONS ITL 2025 code (ITL225CD)",
+  "source": {
+    "name": "International Territorial Level 2 (January 2025) Boundaries UK BUC",
+    "publisher": "Office for National Statistics (Open Geography Portal)",
+    "url": "https://geoportal.statistics.gov.uk/search?q=ITL2_JAN_2025_UK_BUC",
+    "download_url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ITL2_JAN_2025_UK_BUC/FeatureServer/0/query?where=1%3D1&outFields=ITL225CD,ITL225NM&outSR=4326&f=geojson",
+    "version": "ITL 2025 (January 2025), ITL2, BUC (ultra generalised 500m, clipped to the coastline)",
+    "license": "Open Government Licence v3.0",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2025.",
+    "retrieved": "2026-10-13",
+    "sha256": "87971e7f04e1127afaa2ed439510bd4b7d020be2a7e19ee21bd4f5771699c57c"
+  },
+  "projection": {
+    "main": {
+      "type": "conicEqualArea",
+      "parallels": [
+        51,
+        58
+      ],
+      "rotate": 3,
+      "center": [
+        0,
+        54.5
+      ],
+      "scale": 5109.359996,
+      "translate": [
+        279.936652,
+        580.457143
+      ]
+    },
+    "viewBox": [
+      0,
+      0,
+      550,
+      1000
+    ]
+  },
+  "excluded": [
+    {
+      "name_ja": "マン島",
+      "name_en": "Isle of Man",
+      "code": "IM",
+      "reason": "王室属領（英国の ITL 外）"
+    },
+    {
+      "name_ja": "ジャージー",
+      "name_en": "Jersey",
+      "code": "JE",
+      "reason": "王室属領（英国の ITL 外）"
+    },
+    {
+      "name_ja": "ガーンジー",
+      "name_en": "Guernsey",
+      "code": "GG",
+      "reason": "王室属領（英国の ITL 外）"
+    },
+    {
+      "name_ja": "英国の海外領土",
+      "name_en": "British Overseas Territories",
+      "code": "",
+      "reason": "ITL 外"
+    }
+  ],
+  "notes": [
+    "ONS の ITL 2025 年分類（2025 年 1 月）の ITL2。England の細分を含む 46 地域。4 構成国、ITL1 の 12 地域、ITL 2021 / NUTS の 41 地域のいずれでもない。",
+    "北アイルランドは TLN0 として gb に含む（ie には含めない）。"
+  ],
+  "regions": [
+    {
+      "code": "TLC3",
+      "country": "GB",
+      "name_ja": "ティーズ・バレー",
+      "name_en": "Tees Valley",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLC3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLC4",
+      "country": "GB",
+      "name_ja": "ノーサンバーランド、ダラム、タイン・アンド・ウィア",
+      "name_en": "Northumberland, Durham and Tyne & Wear",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLC4"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLD1",
+      "country": "GB",
+      "name_ja": "カンブリア",
+      "name_en": "Cumbria",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLD1"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLD3",
+      "country": "GB",
+      "name_ja": "グレーター・マンチェスター",
+      "name_en": "Greater Manchester",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLD3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLD4",
+      "country": "GB",
+      "name_ja": "ランカシャー",
+      "name_en": "Lancashire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLD4"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLD6",
+      "country": "GB",
+      "name_ja": "チェシャー",
+      "name_en": "Cheshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLD6"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLD7",
+      "country": "GB",
+      "name_ja": "マージーサイド",
+      "name_en": "Merseyside",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLD7"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLE1",
+      "country": "GB",
+      "name_ja": "イースト・ヨークシャー、ノーザン・リンカンシャー",
+      "name_en": "East Yorkshire and Northern Lincolnshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLE1"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLE2",
+      "country": "GB",
+      "name_ja": "ノース・ヨークシャー",
+      "name_en": "North Yorkshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLE2"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLE3",
+      "country": "GB",
+      "name_ja": "サウス・ヨークシャー",
+      "name_en": "South Yorkshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLE3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLE4",
+      "country": "GB",
+      "name_ja": "ウェスト・ヨークシャー",
+      "name_en": "West Yorkshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLE4"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLF1",
+      "country": "GB",
+      "name_ja": "ダービーシャー、ノッティンガムシャー",
+      "name_en": "Derbyshire and Nottinghamshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLF1"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLF2",
+      "country": "GB",
+      "name_ja": "レスターシャー、ラトランド、ノーサンプトンシャー",
+      "name_en": "Leicestershire, Rutland and Northamptonshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLF2"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLF3",
+      "country": "GB",
+      "name_ja": "リンカンシャー",
+      "name_en": "Lincolnshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLF3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLG1",
+      "country": "GB",
+      "name_ja": "ヘレフォードシャー、ウスターシャー、ウォリックシャー",
+      "name_en": "Herefordshire, Worcestershire and Warwickshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLG1"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLG2",
+      "country": "GB",
+      "name_ja": "シュロップシャー、スタッフォードシャー",
+      "name_en": "Shropshire and Staffordshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLG2"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLG3",
+      "country": "GB",
+      "name_ja": "ウェスト・ミッドランズ",
+      "name_en": "West Midlands",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLG3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLH2",
+      "country": "GB",
+      "name_ja": "ベッドフォードシャー、ハートフォードシャー",
+      "name_en": "Bedfordshire and Hertfordshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLH2"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLH3",
+      "country": "GB",
+      "name_ja": "エセックス",
+      "name_en": "Essex",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLH3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLH4",
+      "country": "GB",
+      "name_ja": "ケンブリッジシャー、ピーターバラ",
+      "name_en": "Cambridgeshire and Peterborough",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLH4"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLH5",
+      "country": "GB",
+      "name_ja": "ノーフォーク",
+      "name_en": "Norfolk",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLH5"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLH6",
+      "country": "GB",
+      "name_ja": "サフォーク",
+      "name_en": "Suffolk",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLH6"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLI3",
+      "country": "GB",
+      "name_ja": "インナー・ロンドン西部",
+      "name_en": "Inner London - West",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLI3"
+      ],
+      "marker": {
+        "full": true,
+        "mobile": true
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLI4",
+      "country": "GB",
+      "name_ja": "インナー・ロンドン東部",
+      "name_en": "Inner London - East",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLI4"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": true
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLI5",
+      "country": "GB",
+      "name_ja": "アウター・ロンドン東部・北東部",
+      "name_en": "Outer London - East and North East",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLI5"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLI6",
+      "country": "GB",
+      "name_ja": "アウター・ロンドン南部",
+      "name_en": "Outer London - South",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLI6"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLI7",
+      "country": "GB",
+      "name_ja": "アウター・ロンドン西部・北西部",
+      "name_en": "Outer London - West and North West",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLI7"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLJ1",
+      "country": "GB",
+      "name_ja": "バークシャー、バッキンガムシャー、オックスフォードシャー",
+      "name_en": "Berkshire, Buckinghamshire and Oxfordshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLJ1"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLJ2",
+      "country": "GB",
+      "name_ja": "サリー、イースト・サセックス、ウェスト・サセックス",
+      "name_en": "Surrey, East and West Sussex",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLJ2"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLJ3",
+      "country": "GB",
+      "name_ja": "ハンプシャー、ワイト島",
+      "name_en": "Hampshire and Isle of Wight",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLJ3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLJ4",
+      "country": "GB",
+      "name_ja": "ケント",
+      "name_en": "Kent",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLJ4"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLK3",
+      "country": "GB",
+      "name_ja": "コーンウォール、シリー諸島",
+      "name_en": "Cornwall and Isles of Scilly",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLK3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLK4",
+      "country": "GB",
+      "name_ja": "デヴォン",
+      "name_en": "Devon",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLK4"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLK5",
+      "country": "GB",
+      "name_ja": "ウェスト・オブ・イングランド",
+      "name_en": "West of England",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLK5"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLK6",
+      "country": "GB",
+      "name_ja": "ノース・サマセット、サマセット、ドーセット",
+      "name_en": "North Somerset, Somerset and Dorset",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLK6"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLK7",
+      "country": "GB",
+      "name_ja": "グロスターシャー、ウィルトシャー",
+      "name_en": "Gloucestershire and Wiltshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLK7"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLL3",
+      "country": "GB",
+      "name_ja": "北ウェールズ",
+      "name_en": "North Wales",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLL3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLL4",
+      "country": "GB",
+      "name_ja": "中部・南西ウェールズ",
+      "name_en": "Mid and South West Wales",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLL4"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLL5",
+      "country": "GB",
+      "name_ja": "南東ウェールズ",
+      "name_en": "South East Wales",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLL5"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLM0",
+      "country": "GB",
+      "name_ja": "東部スコットランド",
+      "name_en": "Eastern Scotland",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLM0"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLM1",
+      "country": "GB",
+      "name_ja": "中東部スコットランド",
+      "name_en": "East Central Scotland",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLM1"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLM2",
+      "country": "GB",
+      "name_ja": "ハイランド・アンド・アイランズ",
+      "name_en": "Highlands and Islands",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLM2"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLM3",
+      "country": "GB",
+      "name_ja": "中西部スコットランド",
+      "name_en": "West Central Scotland",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLM3"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLM5",
+      "country": "GB",
+      "name_ja": "北東部スコットランド",
+      "name_en": "North Eastern Scotland",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLM5"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLM9",
+      "country": "GB",
+      "name_ja": "南部スコットランド",
+      "name_en": "Southern Scotland",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLM9"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "TLN0",
+      "country": "GB",
+      "name_ja": "北アイルランド",
+      "name_en": "Northern Ireland",
+      "included_in_svg": true,
+      "source_ids": [
+        "TLN0"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    }
+  ]
+}

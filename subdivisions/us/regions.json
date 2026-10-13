@@ -1,0 +1,891 @@
+{
+  "country": "US",
+  "country_name_ja": "アメリカ合衆国",
+  "country_name_en": "United States",
+  "division_ja": "50 州とコロンビア特別区",
+  "division_en": "50 states and the District of Columbia",
+  "denominator": 51,
+  "id_scheme": "ISO 3166-2:US",
+  "source": {
+    "name": "Natural Earth 1:10m Cultural Vectors, Admin 1 – States, Provinces (large lakes removed)",
+    "publisher": "Natural Earth",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "download_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_1_states_provinces_lakes.geojson",
+    "version": "v5.1.2 (ne_10m_admin_1_states_provinces_lakes)",
+    "license": "Public Domain",
+    "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+    "retrieved": "2026-10-13",
+    "sha256": "ff5e330cf097a639cc413ab849814d605ba76307235e3a9eba5d1aa0491beba1"
+  },
+  "projection": {
+    "main": {
+      "type": "conicEqualArea",
+      "parallels": [
+        29.5,
+        45.5
+      ],
+      "rotate": 96,
+      "center": [
+        -0.6,
+        38.7
+      ],
+      "scale": 1250.439431,
+      "translate": [
+        536.296304,
+        292.69482
+      ]
+    },
+    "insets": {
+      "US-AK": {
+        "type": "conicEqualArea",
+        "parallels": [
+          55,
+          65
+        ],
+        "rotate": 154,
+        "center": [
+          -2,
+          58.5
+        ],
+        "scale": 437.653801,
+        "translate": [
+          152.411399,
+          544.033146
+        ]
+      },
+      "US-HI": {
+        "type": "conicEqualArea",
+        "parallels": [
+          8,
+          18
+        ],
+        "rotate": 157,
+        "center": [
+          -3,
+          19.9
+        ],
+        "scale": 1250.439431,
+        "translate": [
+          279.956221,
+          557.78798
+        ]
+      }
+    },
+    "viewBox": [
+      0,
+      0,
+      1000,
+      594
+    ]
+  },
+  "excluded": [
+    {
+      "name_ja": "プエルトリコ",
+      "name_en": "Puerto Rico",
+      "code": "US-PR",
+      "reason": "海外領域（州・DC ではない）"
+    },
+    {
+      "name_ja": "グアム",
+      "name_en": "Guam",
+      "code": "US-GU",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "米領ヴァージン諸島",
+      "name_en": "United States Virgin Islands",
+      "code": "US-VI",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "米領サモア",
+      "name_en": "American Samoa",
+      "code": "US-AS",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "北マリアナ諸島",
+      "name_en": "Northern Mariana Islands",
+      "code": "US-MP",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "合衆国領有小離島",
+      "name_en": "United States Minor Outlying Islands",
+      "code": "US-UM",
+      "reason": "海外領域"
+    }
+  ],
+  "notes": [
+    "アラスカ州とハワイ州は本土の左下にはめ込みで配置（d3-geo の geoAlbersUsa と同じ配置。アラスカは面積 0.35 倍）。はめ込みの区切り線は `<g class=\"boundary-line\">` に入っており、data-code を持たない。",
+    "ハワイ州の北西ハワイ諸島（西経 161 度以西）は小島のため描画を省略（区分としてはハワイ州）。"
+  ],
+  "regions": [
+    {
+      "code": "US-AK",
+      "country": "US",
+      "name_ja": "アラスカ州",
+      "name_en": "Alaska",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3563"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "本土の左下にはめ込み（面積 0.35 倍）"
+    },
+    {
+      "code": "US-AL",
+      "country": "US",
+      "name_ja": "アラバマ州",
+      "name_en": "Alabama",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3541"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-AR",
+      "country": "US",
+      "name_ja": "アーカンソー州",
+      "name_en": "Arkansas",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3528"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-AZ",
+      "country": "US",
+      "name_ja": "アリゾナ州",
+      "name_en": "Arizona",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3520"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-CA",
+      "country": "US",
+      "name_ja": "カリフォルニア州",
+      "name_en": "California",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3521"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-CO",
+      "country": "US",
+      "name_ja": "コロラド州",
+      "name_en": "Colorado",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3522"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-CT",
+      "country": "US",
+      "name_ja": "コネチカット州",
+      "name_en": "Connecticut",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3537"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-DC",
+      "country": "US",
+      "name_ja": "ワシントンD.C.",
+      "name_en": "District of Columbia",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3556"
+      ],
+      "marker": {
+        "full": true,
+        "mobile": true
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-DE",
+      "country": "US",
+      "name_ja": "デラウェア州",
+      "name_en": "Delaware",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3555"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-FL",
+      "country": "US",
+      "name_ja": "フロリダ州",
+      "name_en": "Florida",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3542"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-GA",
+      "country": "US",
+      "name_ja": "ジョージア州",
+      "name_en": "Georgia",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3543"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-HI",
+      "country": "US",
+      "name_ja": "ハワイ州",
+      "name_en": "Hawaii",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3517"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "本土の左下にはめ込み。北西ハワイ諸島は描画を省略"
+    },
+    {
+      "code": "US-IA",
+      "country": "US",
+      "name_ja": "アイオワ州",
+      "name_en": "Iowa",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3529"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-ID",
+      "country": "US",
+      "name_ja": "アイダホ州",
+      "name_en": "Idaho",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3518"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-IL",
+      "country": "US",
+      "name_ja": "イリノイ州",
+      "name_en": "Illinois",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3546"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-IN",
+      "country": "US",
+      "name_ja": "インディアナ州",
+      "name_en": "Indiana",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3547"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-KS",
+      "country": "US",
+      "name_ja": "カンザス州",
+      "name_en": "Kansas",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3530"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-KY",
+      "country": "US",
+      "name_ja": "ケンタッキー州",
+      "name_en": "Kentucky",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3548"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-LA",
+      "country": "US",
+      "name_ja": "ルイジアナ州",
+      "name_en": "Louisiana",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3535"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-MA",
+      "country": "US",
+      "name_ja": "マサチューセッツ州",
+      "name_en": "Massachusetts",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3513"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-MD",
+      "country": "US",
+      "name_ja": "メリーランド州",
+      "name_en": "Maryland",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3557"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-ME",
+      "country": "US",
+      "name_ja": "メイン州",
+      "name_en": "Maine",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3561"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-MI",
+      "country": "US",
+      "name_ja": "ミシガン州",
+      "name_en": "Michigan",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3562"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-MN",
+      "country": "US",
+      "name_ja": "ミネソタ州",
+      "name_en": "Minnesota",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3514"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-MO",
+      "country": "US",
+      "name_ja": "ミズーリ州",
+      "name_en": "Missouri",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3531"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-MS",
+      "country": "US",
+      "name_ja": "ミシシッピ州",
+      "name_en": "Mississippi",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3544"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-MT",
+      "country": "US",
+      "name_ja": "モンタナ州",
+      "name_en": "Montana",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3515"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-NC",
+      "country": "US",
+      "name_ja": "ノースカロライナ州",
+      "name_en": "North Carolina",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3549"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-ND",
+      "country": "US",
+      "name_ja": "ノースダコタ州",
+      "name_en": "North Dakota",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3516"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-NE",
+      "country": "US",
+      "name_ja": "ネブラスカ州",
+      "name_en": "Nebraska",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3532"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-NH",
+      "country": "US",
+      "name_ja": "ニューハンプシャー州",
+      "name_en": "New Hampshire",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3538"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-NJ",
+      "country": "US",
+      "name_ja": "ニュージャージー州",
+      "name_en": "New Jersey",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3558"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-NM",
+      "country": "US",
+      "name_ja": "ニューメキシコ州",
+      "name_en": "New Mexico",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3524"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-NV",
+      "country": "US",
+      "name_ja": "ネバダ州",
+      "name_en": "Nevada",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3523"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-NY",
+      "country": "US",
+      "name_ja": "ニューヨーク州",
+      "name_en": "New York",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3559"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-OH",
+      "country": "US",
+      "name_ja": "オハイオ州",
+      "name_en": "Ohio",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3550"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-OK",
+      "country": "US",
+      "name_ja": "オクラホマ州",
+      "name_en": "Oklahoma",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3533"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-OR",
+      "country": "US",
+      "name_ja": "オレゴン州",
+      "name_en": "Oregon",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3525"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-PA",
+      "country": "US",
+      "name_ja": "ペンシルベニア州",
+      "name_en": "Pennsylvania",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3560"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-RI",
+      "country": "US",
+      "name_ja": "ロードアイランド州",
+      "name_en": "Rhode Island",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3539"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": true
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-SC",
+      "country": "US",
+      "name_ja": "サウスカロライナ州",
+      "name_en": "South Carolina",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3545"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-SD",
+      "country": "US",
+      "name_ja": "サウスダコタ州",
+      "name_en": "South Dakota",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3534"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-TN",
+      "country": "US",
+      "name_ja": "テネシー州",
+      "name_en": "Tennessee",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3551"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-TX",
+      "country": "US",
+      "name_ja": "テキサス州",
+      "name_en": "Texas",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3536"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-UT",
+      "country": "US",
+      "name_ja": "ユタ州",
+      "name_en": "Utah",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3526"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-VA",
+      "country": "US",
+      "name_ja": "バージニア州",
+      "name_en": "Virginia",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3552"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-VT",
+      "country": "US",
+      "name_ja": "バーモント州",
+      "name_en": "Vermont",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3540"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-WA",
+      "country": "US",
+      "name_ja": "ワシントン州",
+      "name_en": "Washington",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3519"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-WI",
+      "country": "US",
+      "name_ja": "ウィスコンシン州",
+      "name_en": "Wisconsin",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3553"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-WV",
+      "country": "US",
+      "name_ja": "ウェストバージニア州",
+      "name_en": "West Virginia",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3554"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "US-WY",
+      "country": "US",
+      "name_ja": "ワイオミング州",
+      "name_en": "Wyoming",
+      "included_in_svg": true,
+      "source_ids": [
+        "USA-3527"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    }
+  ]
+}

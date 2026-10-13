@@ -76,3 +76,53 @@ header, h2
   color: #555555;
   font-size: 14px;
 }
+
+/* 国の中の区画 (subdivisions.html) */
+.switcher
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.switcher button
+{
+  font: inherit;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #222222;
+  cursor: pointer;
+}
+
+.switcher button[aria-pressed="true"]
+{
+  background: #333333;
+  color: #ffffff;
+}
+
+.subdivision-svg-map
+{
+  width: 100%;
+  max-height: 80vh;
+}
+
+.subdivision-svg-map .region
+{
+  fill: #f7f7f7;
+  stroke: #666666;
+  cursor: pointer;
+}
+
+.subdivision-svg-map .region:hover
+{
+  fill: #ffcc80;
+}
+
+.subdivision-svg-map .region.visited
+{
+  fill: #e8927c;
+}

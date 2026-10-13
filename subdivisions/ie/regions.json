@@ -1,0 +1,509 @@
+{
+  "country": "IE",
+  "country_name_ja": "アイルランド",
+  "country_name_en": "Ireland",
+  "division_ja": "伝統的な 26 県",
+  "division_en": "26 traditional counties",
+  "denominator": 26,
+  "id_scheme": "ISO 3166-2:IE（県）",
+  "source": {
+    "name": "Natural Earth 1:10m Cultural Vectors, Admin 1 – States, Provinces (large lakes removed)",
+    "publisher": "Natural Earth",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "download_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_1_states_provinces_lakes.geojson",
+    "version": "v5.1.2 (ne_10m_admin_1_states_provinces_lakes)",
+    "license": "Public Domain",
+    "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+    "retrieved": "2026-10-13",
+    "sha256": "ff5e330cf097a639cc413ab849814d605ba76307235e3a9eba5d1aa0491beba1"
+  },
+  "projection": {
+    "main": {
+      "type": "conicEqualArea",
+      "parallels": [
+        52,
+        55
+      ],
+      "rotate": 8,
+      "center": [
+        0,
+        53.4
+      ],
+      "scale": 14234.662969,
+      "translate": [
+        389.663356,
+        505.95971
+      ]
+    },
+    "viewBox": [
+      0,
+      0,
+      702,
+      1000
+    ]
+  },
+  "excluded": [
+    {
+      "name_ja": "北アイルランド（アントリム、アーマー、ダウン、ファーマナ、ロンドンデリー、ティロン）",
+      "name_en": "Northern Ireland (Antrim, Armagh, Down, Fermanagh, Londonderry, Tyrone)",
+      "code": "",
+      "reason": "英国。gb の TLN0 に含む"
+    }
+  ],
+  "notes": [
+    "Natural Earth の地方自治体単位（34）を ISO 3166-2:IE の県へ統合して 26 県にした。ダブリン（Dublin City・Dún Laoghaire–Rathdown・Fingal・South Dublin）は 1 県、ティペラリー（North / South Tipperary）は 1 県、コーク・ゴールウェイ・リムリック・ウォーターフォードは市と県を 1 県にまとめている。"
+  ],
+  "regions": [
+    {
+      "code": "IE-CE",
+      "country": "IE",
+      "name_ja": "クレア県",
+      "name_en": "Clare",
+      "included_in_svg": true,
+      "name_ga": "An Clár",
+      "province": "Munster",
+      "source_ids": [
+        "IRL-76"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-CN",
+      "country": "IE",
+      "name_ja": "キャバン県",
+      "name_en": "Cavan",
+      "included_in_svg": true,
+      "name_ga": "An Cabhán",
+      "province": "Ulster",
+      "source_ids": [
+        "IRL-79"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-CO",
+      "country": "IE",
+      "name_ja": "コーク県",
+      "name_en": "Cork",
+      "included_in_svg": true,
+      "name_ga": "Corcaigh",
+      "province": "Munster",
+      "source_ids": [
+        "IRL-78",
+        "IRL-5569"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "Natural Earth の Cork (County)・Cork (City) を 1 県に統合"
+    },
+    {
+      "code": "IE-CW",
+      "country": "IE",
+      "name_ja": "カーロウ県",
+      "name_en": "Carlow",
+      "included_in_svg": true,
+      "name_ga": "Ceatharlach",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-77"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-D",
+      "country": "IE",
+      "name_ja": "ダブリン県",
+      "name_en": "Dublin",
+      "included_in_svg": true,
+      "name_ga": "Baile Átha Cliath",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-5575",
+        "IRL-5576",
+        "IRL-5574",
+        "IRL-5573"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "Natural Earth の Dublin (County)・Dún Laoghaire–Rathdown (County)・Fingal (County)・South Dublin (County) を 1 県に統合"
+    },
+    {
+      "code": "IE-DL",
+      "country": "IE",
+      "name_ja": "ドニゴール県",
+      "name_en": "Donegal",
+      "included_in_svg": true,
+      "name_ga": "Dún na nGall",
+      "province": "Ulster",
+      "source_ids": [
+        "IRL-729"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-G",
+      "country": "IE",
+      "name_ja": "ゴールウェイ県",
+      "name_en": "Galway",
+      "included_in_svg": true,
+      "name_ga": "Gaillimh",
+      "province": "Connacht",
+      "source_ids": [
+        "IRL-713",
+        "IRL-5568"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "Natural Earth の Galway (County)・Galway (City) を 1 県に統合"
+    },
+    {
+      "code": "IE-KE",
+      "country": "IE",
+      "name_ja": "キルデア県",
+      "name_en": "Kildare",
+      "included_in_svg": true,
+      "name_ga": "Cill Dara",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-721"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-KK",
+      "country": "IE",
+      "name_ja": "キルケニー県",
+      "name_en": "Kilkenny",
+      "included_in_svg": true,
+      "name_ga": "Cill Chainnigh",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-722"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-KY",
+      "country": "IE",
+      "name_ja": "ケリー県",
+      "name_en": "Kerry",
+      "included_in_svg": true,
+      "name_ga": "Ciarraí",
+      "province": "Munster",
+      "source_ids": [
+        "IRL-725"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-LD",
+      "country": "IE",
+      "name_ja": "ロングフォード県",
+      "name_en": "Longford",
+      "included_in_svg": true,
+      "name_ga": "An Longfort",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-731"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-LH",
+      "country": "IE",
+      "name_ja": "ラウス県",
+      "name_en": "Louth",
+      "included_in_svg": true,
+      "name_ga": "Lú",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-712"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-LK",
+      "country": "IE",
+      "name_ja": "リムリック県",
+      "name_en": "Limerick",
+      "included_in_svg": true,
+      "name_ga": "Luimneach",
+      "province": "Munster",
+      "source_ids": [
+        "IRL-726",
+        "IRL-5570"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "Natural Earth の Limerick (County)・Limerick (City) を 1 県に統合"
+    },
+    {
+      "code": "IE-LM",
+      "country": "IE",
+      "name_ja": "リートリム県",
+      "name_en": "Leitrim",
+      "included_in_svg": true,
+      "name_ga": "Liatroim",
+      "province": "Connacht",
+      "source_ids": [
+        "IRL-730"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-LS",
+      "country": "IE",
+      "name_ja": "リーシュ県",
+      "name_en": "Laois",
+      "included_in_svg": true,
+      "name_ga": "Laois",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-723"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-MH",
+      "country": "IE",
+      "name_ja": "ミース県",
+      "name_en": "Meath",
+      "included_in_svg": true,
+      "name_ga": "An Mhí",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-715"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-MN",
+      "country": "IE",
+      "name_ja": "モナハン県",
+      "name_en": "Monaghan",
+      "included_in_svg": true,
+      "name_ga": "Muineachán",
+      "province": "Ulster",
+      "source_ids": [
+        "IRL-3412"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-MO",
+      "country": "IE",
+      "name_ja": "メイヨー県",
+      "name_en": "Mayo",
+      "included_in_svg": true,
+      "name_ga": "Maigh Eo",
+      "province": "Connacht",
+      "source_ids": [
+        "IRL-714"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-OY",
+      "country": "IE",
+      "name_ja": "オファリー県",
+      "name_en": "Offaly",
+      "included_in_svg": true,
+      "name_ga": "Uíbh Fhailí",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-716"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-RN",
+      "country": "IE",
+      "name_ja": "ロスコモン県",
+      "name_en": "Roscommon",
+      "included_in_svg": true,
+      "name_ga": "Ros Comáin",
+      "province": "Connacht",
+      "source_ids": [
+        "IRL-727"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-SO",
+      "country": "IE",
+      "name_ja": "スライゴ県",
+      "name_en": "Sligo",
+      "included_in_svg": true,
+      "name_ga": "Sligeach",
+      "province": "Connacht",
+      "source_ids": [
+        "IRL-728"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-TA",
+      "country": "IE",
+      "name_ja": "ティペラリー県",
+      "name_en": "Tipperary",
+      "included_in_svg": true,
+      "name_ga": "Tiobraid Árann",
+      "province": "Munster",
+      "source_ids": [
+        "IRL-724",
+        "IRL-5572"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "Natural Earth の North Tipperary (County)・South Tipperary (County) を 1 県に統合"
+    },
+    {
+      "code": "IE-WD",
+      "country": "IE",
+      "name_ja": "ウォーターフォード県",
+      "name_en": "Waterford",
+      "included_in_svg": true,
+      "name_ga": "Port Láirge",
+      "province": "Munster",
+      "source_ids": [
+        "IRL-1444",
+        "IRL-5571"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "Natural Earth の Waterford (County)・Waterford (City) を 1 県に統合"
+    },
+    {
+      "code": "IE-WH",
+      "country": "IE",
+      "name_ja": "ウェストミース県",
+      "name_en": "Westmeath",
+      "included_in_svg": true,
+      "name_ga": "An Iarmhí",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-717"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-WW",
+      "country": "IE",
+      "name_ja": "ウィックロー県",
+      "name_en": "Wicklow",
+      "included_in_svg": true,
+      "name_ga": "Cill Mhantáin",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-719"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "IE-WX",
+      "country": "IE",
+      "name_ja": "ウェックスフォード県",
+      "name_en": "Wexford",
+      "included_in_svg": true,
+      "name_ga": "Loch Garman",
+      "province": "Leinster",
+      "source_ids": [
+        "IRL-718"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    }
+  ]
+}

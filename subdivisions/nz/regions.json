@@ -1,0 +1,325 @@
+{
+  "country": "NZ",
+  "country_name_ja": "ニュージーランド",
+  "country_name_en": "New Zealand",
+  "division_ja": "16 の地方（regional council の区域）",
+  "division_en": "16 regions",
+  "denominator": 16,
+  "id_scheme": "ISO 3166-2:NZ（Stats NZ の地方コード REGC2025 を stats_nz_code に併記）",
+  "source": {
+    "name": "Natural Earth 1:10m Cultural Vectors, Admin 1 – States, Provinces (large lakes removed)",
+    "publisher": "Natural Earth",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "download_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_1_states_provinces_lakes.geojson",
+    "version": "v5.1.2 (ne_10m_admin_1_states_provinces_lakes)",
+    "license": "Public Domain",
+    "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+    "retrieved": "2026-10-13",
+    "sha256": "ff5e330cf097a639cc413ab849814d605ba76307235e3a9eba5d1aa0491beba1"
+  },
+  "projection": {
+    "main": {
+      "type": "conicEqualArea",
+      "parallels": [
+        -37,
+        -45
+      ],
+      "rotate": -173,
+      "center": [
+        0,
+        -41
+      ],
+      "scale": 4301.557043,
+      "translate": [
+        353.803803,
+        507.810065
+      ]
+    },
+    "viewBox": [
+      0,
+      0,
+      696,
+      1000
+    ]
+  },
+  "excluded": [
+    {
+      "name_ja": "チャタム諸島",
+      "name_en": "Chatham Islands Territory",
+      "code": "NZ-CIT",
+      "reason": "地方（regional council）に属さない特別区域（Stats NZ の 99 Area Outside Region）"
+    },
+    {
+      "name_ja": "ケルマデック諸島・亜南極諸島など",
+      "name_en": "Kermadec, Three Kings and sub-Antarctic islands",
+      "code": "",
+      "reason": "地方に属さない区域（Area Outside Region）"
+    },
+    {
+      "name_ja": "トケラウ",
+      "name_en": "Tokelau",
+      "code": "TK",
+      "reason": "海外領域"
+    }
+  ],
+  "notes": [],
+  "regions": [
+    {
+      "code": "NZ-AUK",
+      "country": "NZ",
+      "name_ja": "オークランド地方",
+      "name_en": "Auckland",
+      "included_in_svg": true,
+      "stats_nz_code": "02",
+      "source_ids": [
+        "NZL-3398"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-BOP",
+      "country": "NZ",
+      "name_ja": "ベイ・オブ・プレンティ地方",
+      "name_en": "Bay of Plenty",
+      "included_in_svg": true,
+      "stats_nz_code": "04",
+      "source_ids": [
+        "NZL-3399"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-CAN",
+      "country": "NZ",
+      "name_ja": "カンタベリー地方",
+      "name_en": "Canterbury",
+      "included_in_svg": true,
+      "stats_nz_code": "13",
+      "source_ids": [
+        "NZL-3400"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-GIS",
+      "country": "NZ",
+      "name_ja": "ギズボーン地方",
+      "name_en": "Gisborne",
+      "included_in_svg": true,
+      "stats_nz_code": "05",
+      "source_ids": [
+        "NZL-3396"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-HKB",
+      "country": "NZ",
+      "name_ja": "ホークスベイ地方",
+      "name_en": "Hawke's Bay",
+      "included_in_svg": true,
+      "stats_nz_code": "06",
+      "source_ids": [
+        "NZL-3397"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-MBH",
+      "country": "NZ",
+      "name_ja": "マールボロ地方",
+      "name_en": "Marlborough",
+      "included_in_svg": true,
+      "stats_nz_code": "18",
+      "source_ids": [
+        "NZL-3401"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-MWT",
+      "country": "NZ",
+      "name_ja": "マナワツ・ワンガヌイ地方",
+      "name_en": "Manawatū-Whanganui",
+      "included_in_svg": true,
+      "stats_nz_code": "08",
+      "source_ids": [
+        "NZL-3334"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-NSN",
+      "country": "NZ",
+      "name_ja": "ネルソン地方",
+      "name_en": "Nelson",
+      "included_in_svg": true,
+      "stats_nz_code": "17",
+      "source_ids": [
+        "NZL-3402"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": true
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-NTL",
+      "country": "NZ",
+      "name_ja": "ノースランド地方",
+      "name_en": "Northland",
+      "included_in_svg": true,
+      "stats_nz_code": "01",
+      "source_ids": [
+        "NZL-3404"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-OTA",
+      "country": "NZ",
+      "name_ja": "オタゴ地方",
+      "name_en": "Otago",
+      "included_in_svg": true,
+      "stats_nz_code": "14",
+      "source_ids": [
+        "NZL-3407"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-STL",
+      "country": "NZ",
+      "name_ja": "サウスランド地方",
+      "name_en": "Southland",
+      "included_in_svg": true,
+      "stats_nz_code": "15",
+      "source_ids": [
+        "NZL-3408"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-TAS",
+      "country": "NZ",
+      "name_ja": "タスマン地方",
+      "name_en": "Tasman",
+      "included_in_svg": true,
+      "stats_nz_code": "16",
+      "source_ids": [
+        "NZL-3403"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-TKI",
+      "country": "NZ",
+      "name_ja": "タラナキ地方",
+      "name_en": "Taranaki",
+      "included_in_svg": true,
+      "stats_nz_code": "07",
+      "source_ids": [
+        "NZL-3405"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-WGN",
+      "country": "NZ",
+      "name_ja": "ウェリントン地方",
+      "name_en": "Wellington",
+      "included_in_svg": true,
+      "stats_nz_code": "09",
+      "source_ids": [
+        "NZL-5469"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-WKO",
+      "country": "NZ",
+      "name_ja": "ワイカト地方",
+      "name_en": "Waikato",
+      "included_in_svg": true,
+      "stats_nz_code": "03",
+      "source_ids": [
+        "NZL-5468"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "NZ-WTC",
+      "country": "NZ",
+      "name_ja": "ウェストコースト地方",
+      "name_en": "West Coast",
+      "included_in_svg": true,
+      "stats_nz_code": "12",
+      "source_ids": [
+        "NZL-3406"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    }
+  ]
+}

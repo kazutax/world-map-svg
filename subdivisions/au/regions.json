@@ -1,0 +1,221 @@
+{
+  "country": "AU",
+  "country_name_ja": "オーストラリア",
+  "country_name_en": "Australia",
+  "division_ja": "6 州と 2 準州（ACT・NT）",
+  "division_en": "6 states, ACT and NT",
+  "denominator": 8,
+  "id_scheme": "ISO 3166-2:AU",
+  "source": {
+    "name": "Natural Earth 1:10m Cultural Vectors, Admin 1 – States, Provinces (large lakes removed)",
+    "publisher": "Natural Earth",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "download_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_1_states_provinces_lakes.geojson",
+    "version": "v5.1.2 (ne_10m_admin_1_states_provinces_lakes)",
+    "license": "Public Domain",
+    "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+    "retrieved": "2026-10-13",
+    "sha256": "ff5e330cf097a639cc413ab849814d605ba76307235e3a9eba5d1aa0491beba1"
+  },
+  "projection": {
+    "main": {
+      "type": "conicEqualArea",
+      "parallels": [
+        -18,
+        -36
+      ],
+      "rotate": -134,
+      "center": [
+        0,
+        -27
+      ],
+      "scale": 1553.25698,
+      "translate": [
+        519.310871,
+        484.793106
+      ]
+    },
+    "viewBox": [
+      0,
+      0,
+      1000,
+      960
+    ]
+  },
+  "excluded": [
+    {
+      "name_ja": "ジャービス湾特別地域",
+      "name_en": "Jervis Bay Territory",
+      "code": "",
+      "reason": "連邦直轄の特別地域。6 州・ACT・NT のいずれでもない（ABS では Other Territories）"
+    },
+    {
+      "name_ja": "クリスマス島",
+      "name_en": "Christmas Island",
+      "code": "CX",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "ココス（キーリング）諸島",
+      "name_en": "Cocos (Keeling) Islands",
+      "code": "CC",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "ノーフォーク島",
+      "name_en": "Norfolk Island",
+      "code": "NF",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "ハード島とマクドナルド諸島",
+      "name_en": "Heard Island and McDonald Islands",
+      "code": "HM",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "アシュモア・カルティエ諸島",
+      "name_en": "Ashmore and Cartier Islands",
+      "code": "",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "コーラル・シー諸島",
+      "name_en": "Coral Sea Islands",
+      "code": "",
+      "reason": "海外領域"
+    },
+    {
+      "name_ja": "オーストラリア南極領土",
+      "name_en": "Australian Antarctic Territory",
+      "code": "",
+      "reason": "海外領域"
+    }
+  ],
+  "notes": [
+    "ロードハウ島（ニューサウスウェールズ州）とマッコーリー島（タスマニア州）は本土から遠い小島のため描画を省略（区分としてはそれぞれの州）。"
+  ],
+  "regions": [
+    {
+      "code": "AU-ACT",
+      "country": "AU",
+      "name_ja": "オーストラリア首都特別地域",
+      "name_en": "Australian Capital Territory",
+      "included_in_svg": true,
+      "source_ids": [
+        "AUS-2653"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": true
+      },
+      "notes": ""
+    },
+    {
+      "code": "AU-NSW",
+      "country": "AU",
+      "name_ja": "ニューサウスウェールズ州",
+      "name_en": "New South Wales",
+      "included_in_svg": true,
+      "source_ids": [
+        "AUS-2654"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "ロードハウ島は描画を省略"
+    },
+    {
+      "code": "AU-NT",
+      "country": "AU",
+      "name_ja": "北部準州",
+      "name_en": "Northern Territory",
+      "included_in_svg": true,
+      "source_ids": [
+        "AUS-2650"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "AU-QLD",
+      "country": "AU",
+      "name_ja": "クイーンズランド州",
+      "name_en": "Queensland",
+      "included_in_svg": true,
+      "source_ids": [
+        "AUS-2657"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "AU-SA",
+      "country": "AU",
+      "name_ja": "南オーストラリア州",
+      "name_en": "South Australia",
+      "included_in_svg": true,
+      "source_ids": [
+        "AUS-2655"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "AU-TAS",
+      "country": "AU",
+      "name_ja": "タスマニア州",
+      "name_en": "Tasmania",
+      "included_in_svg": true,
+      "source_ids": [
+        "AUS-2660"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": "マッコーリー島は描画を省略"
+    },
+    {
+      "code": "AU-VIC",
+      "country": "AU",
+      "name_ja": "ビクトリア州",
+      "name_en": "Victoria",
+      "included_in_svg": true,
+      "source_ids": [
+        "AUS-2656"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "AU-WA",
+      "country": "AU",
+      "name_ja": "西オーストラリア州",
+      "name_en": "Western Australia",
+      "included_in_svg": true,
+      "source_ids": [
+        "AUS-2651"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    }
+  ]
+}

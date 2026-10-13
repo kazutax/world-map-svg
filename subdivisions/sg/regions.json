@@ -1,0 +1,134 @@
+{
+  "country": "SG",
+  "country_name_ja": "シンガポール",
+  "country_name_en": "Singapore",
+  "division_ja": "URA の 5 地域",
+  "division_en": "5 URA planning regions",
+  "denominator": 5,
+  "id_scheme": "SG-{URA の地域コード}（NER は SG-NE）。ISO 3166-2:SG（CDC の 01〜05）とは別",
+  "source": {
+    "name": "Master Plan 2025 Region Boundary (No Sea)",
+    "publisher": "Urban Redevelopment Authority (data.gov.sg)",
+    "url": "https://data.gov.sg/datasets/d_4ce0038f7ac689652350bb91b7fb92ed/view",
+    "download_url": "https://api-open.data.gov.sg/v1/public/api/datasets/d_4ce0038f7ac689652350bb91b7fb92ed/poll-download",
+    "version": "URA Master Plan 2025 (gazetted 2025-12-01), dataset updated 2026-02-27",
+    "license": "Singapore Open Data Licence v1.0",
+    "license_url": "https://data.gov.sg/open-data-licence",
+    "attribution": "Contains information from Master Plan 2025 Region Boundary (No Sea) accessed on 2026-10-13 from data.gov.sg which is made available under the terms of the Singapore Open Data Licence version 1.0 https://data.gov.sg/open-data-licence",
+    "retrieved": "2026-10-13",
+    "sha256": "532ab664dcb20c277e9800682a8383ca722e295a7819e377af302cbcd11f5c89"
+  },
+  "projection": {
+    "main": {
+      "type": "conicEqualArea",
+      "parallels": [
+        1.2,
+        1.5
+      ],
+      "rotate": -103.82,
+      "center": [
+        0,
+        1.35
+      ],
+      "scale": 115841.386371,
+      "translate": [
+        445.170762,
+        256.184857
+      ]
+    },
+    "viewBox": [
+      0,
+      0,
+      1000,
+      655
+    ]
+  },
+  "excluded": [
+    {
+      "name_ja": "計画区域（55）",
+      "name_en": "Planning areas (55)",
+      "code": "",
+      "reason": "地域の下位区分。分母に使わない"
+    }
+  ],
+  "notes": [
+    "URA Master Plan 2025 の地域境界（海域を除く）。離島（セントーサ、ジュロン島、ウビン島、テコン島など）は所属する地域に含む。"
+  ],
+  "regions": [
+    {
+      "code": "SG-CR",
+      "country": "SG",
+      "name_ja": "中央地域",
+      "name_en": "Central Region",
+      "included_in_svg": true,
+      "source_ids": [
+        "CR (CENTRAL REGION)"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "SG-ER",
+      "country": "SG",
+      "name_ja": "東部地域",
+      "name_en": "East Region",
+      "included_in_svg": true,
+      "source_ids": [
+        "ER (EAST REGION)"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "SG-NE",
+      "country": "SG",
+      "name_ja": "北東部地域",
+      "name_en": "North-East Region",
+      "included_in_svg": true,
+      "source_ids": [
+        "NER (NORTH-EAST REGION)"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "SG-NR",
+      "country": "SG",
+      "name_ja": "北部地域",
+      "name_en": "North Region",
+      "included_in_svg": true,
+      "source_ids": [
+        "NR (NORTH REGION)"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "SG-WR",
+      "country": "SG",
+      "name_ja": "西部地域",
+      "name_en": "West Region",
+      "included_in_svg": true,
+      "source_ids": [
+        "WR (WEST REGION)"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    }
+  ]
+}

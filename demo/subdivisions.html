@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Subdivision Map SVG - Demo</title>
+</head>
+<body>
+
+  <header>
+    <h1>国の中の区画</h1>
+    <p>
+      国を切り替えて、区分にマウスオーバーすると名前と <code>data-code</code> が表示されます。クリックで「訪問済み」に塗れます。
+      <a href="./">世界地図のデモ</a>
+    </p>
+    <div class="switcher" id="countries" role="group" aria-label="国"></div>
+    <div class="switcher" id="variants" role="group" aria-label="SVG の種類">
+      <button type="button" data-variant="mobile" aria-pressed="true">map-mobile.svg</button>
+      <button type="button" data-variant="full" aria-pressed="false">map-full.svg</button>
+    </div>
+    <p class="status">
+      <span id="hover-info">－</span>
+    </p>
+    <p class="status">
+      クリック: <code id="clicked-code">－</code> ／ 訪問 <span id="visited-count">0</span> / <span id="total-count">0</span>
+    </p>
+  </header>
+
+  <h2 id="map-title">－</h2>
+  <p class="note" id="map-file"></p>
+  <div class="map" id="map"></div>
+  <p class="note" id="map-source"></p>
+
+  <a class="forkme" href="https://github.com/kazutax/world-map-svg">Fork me on GitHub</a>
+
+  <script src="./subdivisions.js"></script>
+</body>
+</html>
