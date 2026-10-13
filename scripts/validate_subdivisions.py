@@ -103,13 +103,22 @@ SPEC = {
         ],
     },
     "kr": {
-        "country": "KR", "denominator": 17, "status": "pending",
-        "pending_reason": (
-            "2026-07-01 に光州広域市と全羅南道が統合され「全南光州統合特別市」が発足し、"
-            "公式の第 1 級区分は 16 になった。分母 17 と一致しないため、分母が確定するまで"
-            "未完了として保留 (区分の独自統合はしない)"),
-        "codes": [f"KR-{n}" for n in (11, 26, 27, 28, 29, 30, 31, 41, 42, 43, 44, 45, 46,
-                                      47, 48, 49, 50)],
+        "country": "KR", "denominator": 16, "status": "released",
+        # 2026-07-01 に KR-29 (光州) と KR-46 (全南) が統合。新区分は ISO 未割当のため
+        # 韓国の行政区域コード 12 を使った KR-12
+        "codes": [f"KR-{n}" for n in (11, 26, 27, 28, 30, 31, 41, 42, 43, 44, 45, 47, 48, 49,
+                                      50, 12)],
+        "excluded_codes": ["KR-29", "KR-46", "KR", "KR-KR"],
+        "excluded_names_exact": ["gwangju", "south jeolla", "jeollanam-do", "gwangju-gwangyeoksi",
+                                 "光州広域市", "全羅南道", "광주광역시", "전라남도"],
+        "excluded_names": ["north korea", "북한", "北朝鮮", "pyongyang", "평양", "平壌"],
+        "sentinels": [
+            ("旧光州広域市 (光州市庁)", 126.851, 35.160, "KR-12"),
+            ("旧全羅南道 (務安・道庁)", 126.463, 34.816, "KR-12"),
+            ("軍威郡 (2023-07-01 に大邱へ編入)", 128.573, 36.243, "KR-27"),
+            ("開城 (北朝鮮)", 126.555, 37.970, None),
+            ("対馬 (日本)", 129.290, 34.200, None),
+        ],
     },
     "ca": {
         "country": "CA", "denominator": 13, "status": "released",

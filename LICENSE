@@ -34,6 +34,10 @@ above:
 - gb: Source: Office for National Statistics licensed under the Open Government
   Licence v.3.0. Contains OS data (c) Crown copyright and database right 2025.
   (International Territorial Level 2 (January 2025) Boundaries UK BUC)
+- kr: This data is derived from administrative-dong boundaries released by
+  Statistics Korea SGIS (https://sgis.kostat.go.kr) under KOGL Type 1, modified
+  by vuski/admdongkor (https://github.com/vuski/admdongkor), distributed under
+  CC BY 4.0. Dissolved into 16 first-level divisions by kazutax/world-map-svg.
 - sg: Contains information from Master Plan 2025 Region Boundary (No Sea)
   accessed on 2026-10-13 from data.gov.sg which is made available under the
   terms of the Singapore Open Data Licence version 1.0

@@ -8,6 +8,8 @@
       gb (Open Government Licence v3.0)
   - URA Master Plan 2025 Region Boundary (No Sea) (data.gov.sg)
       sg (Singapore Open Data Licence v1.0)
+  - vuski/admdongkor 行政洞境界 ver20260701 (統計庁 SGIS の公共ヌリ第 1 類型を加工)
+      kr (CC BY 4.0)
 
 使い方:
     python3 scripts/build_subdivisions.py          # 全か国
@@ -47,6 +49,7 @@ VARIANTS = [
 ]
 
 NE_VERSION = "v5.1.2"
+ADMDONG_COMMIT = "7360288277dfd12d74e54b959c59bdd66f852e3a"  # 2026-08-26 鬱陵島の位置補正後
 SOURCES = {
     "ne": {
         "name": "Natural Earth 1:10m Cultural Vectors, Admin 1 – States, Provinces "
@@ -94,6 +97,22 @@ SOURCES = {
                        "under the terms of the Singapore Open Data Licence version 1.0 "
                        "https://data.gov.sg/open-data-licence",
         "file": "ura_mp2025_region_boundary_no_sea.geojson",
+    },
+    "sgis": {
+        "name": "대한민국 행정동 경계 (admdongkor) HangJeongDong_ver20260701",
+        "publisher": "vuski/admdongkor (original: Statistics Korea SGIS)",
+        "url": "https://github.com/vuski/admdongkor",
+        "download_url": f"https://raw.githubusercontent.com/vuski/admdongkor/{ADMDONG_COMMIT}/"
+                        "ver20260701/HangJeongDong_ver20260701.geojson",
+        "version": f"ver20260701 (2026-07-01 boundaries, commit {ADMDONG_COMMIT[:10]})",
+        "license": "CC BY 4.0 (original data: Statistics Korea SGIS, KOGL Type 1)",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "This data is derived from administrative-dong boundaries released by "
+                       "Statistics Korea SGIS (https://sgis.kostat.go.kr) under KOGL Type 1, "
+                       "modified by vuski/admdongkor (https://github.com/vuski/admdongkor), "
+                       "distributed under CC BY 4.0. Dissolved into 16 first-level divisions "
+                       "by kazutax/world-map-svg.",
+        "file": "admdongkor_HangJeongDong_ver20260701.geojson",
     },
 }
 
@@ -259,6 +278,27 @@ GB_NAMES = {
     "TLM9": ("南部スコットランド", "Southern Scotland"),
     "TLN0": ("北アイルランド", "Northern Ireland"),
 }
+# (日本語名, 英語名, 韓国語名, 韓国の行政区域コード (法定洞コードの市道 2 桁))
+# data-code は ISO 3166-2:KR。全南光州統合特別市は ISO 未割当のため行政区域コード 12 を使う
+KR_NAMES = {
+    "KR-11": ("ソウル特別市", "Seoul", "서울특별시", "11"),
+    "KR-26": ("釜山広域市", "Busan", "부산광역시", "26"),
+    "KR-27": ("大邱広域市", "Daegu", "대구광역시", "27"),
+    "KR-28": ("仁川広域市", "Incheon", "인천광역시", "28"),
+    "KR-30": ("大田広域市", "Daejeon", "대전광역시", "30"),
+    "KR-31": ("蔚山広域市", "Ulsan", "울산광역시", "31"),
+    "KR-50": ("世宗特別自治市", "Sejong", "세종특별자치시", "36"),
+    "KR-12": ("全南光州統合特別市", "Jeonnam-Gwangju", "전남광주통합특별시", "12"),
+    "KR-41": ("京畿道", "Gyeonggi", "경기도", "41"),
+    "KR-42": ("江原特別自治道", "Gangwon", "강원특별자치도", "51"),
+    "KR-43": ("忠清北道", "North Chungcheong", "충청북도", "43"),
+    "KR-44": ("忠清南道", "South Chungcheong", "충청남도", "44"),
+    "KR-45": ("全北特別自治道", "Jeonbuk", "전북특별자치도", "52"),
+    "KR-47": ("慶尚北道", "North Gyeongsang", "경상북도", "47"),
+    "KR-48": ("慶尚南道", "South Gyeongsang", "경상남도", "48"),
+    "KR-49": ("済州特別自治道", "Jeju", "제주특별자치도", "50"),
+}
+KR_NO_ISO = {"KR-12"}
 # URA の REGION_C -> 安定 ID
 SG_NAMES = {
     "SG-CR": ("中央地域", "Central Region", "CR"),
@@ -325,6 +365,40 @@ COUNTRIES = {
             "ONS の ITL 2025 年分類（2025 年 1 月）の ITL2。England の細分を含む 46 地域。"
             "4 構成国、ITL1 の 12 地域、ITL 2021 / NUTS の 41 地域のいずれでもない。",
             "北アイルランドは TLN0 として gb に含む（ie には含めない）。",
+        ],
+    },
+    "kr": {
+        "country": "KR", "name_ja": "韓国", "name_en": "South Korea",
+        "division_ja": "第 1 級の 16 区分（2026-07-01 以降）",
+        "division_en": "16 first-level divisions (since 2026-07-01)",
+        "id_scheme": "ISO 3166-2:KR。ISO 未割当の全南光州統合特別市だけ、韓国の行政区域コード 12 を "
+                     "KR-12 とする（行政区域コードを kr_admin_code、ISO コードを iso_3166_2 に併記）",
+        "source": "sgis",
+        "names": {k: v[:2] for k, v in KR_NAMES.items()},
+        "projection": dict(conic((34, 38), -127.8, (0, 36))),
+        "dissolve": True,
+        # リアンクール岩礁 (独島/竹島) はこの縮尺で表示できない小島のため描画しない
+        "polygon_filter": {"KR-47": lambda poly: centroid_lon(poly) < 131.5},
+        "region_notes": {
+            "KR-12": "2026-07-01 に光州広域市（KR-29）と全羅南道（KR-46）が統合して発足。"
+                     "ISO 3166-2 のコードが未割当のため、韓国の行政区域コード 12 を ID にした",
+            "KR-27": "2023-07-01 に慶尚北道から編入された軍威郡を含む",
+            "KR-47": "リアンクール岩礁（独島/竹島）は描画を省略",
+        },
+        "excluded": [
+            ("光州広域市", "Gwangju", "KR-29", "2026-07-01 に全南光州統合特別市（KR-12）へ統合"),
+            ("全羅南道", "South Jeolla", "KR-46", "2026-07-01 に全南光州統合特別市（KR-12）へ統合"),
+        ],
+        "notes": [
+            "2026-07-01 の光州広域市と全羅南道の統合後の 16 区分（行政安全部の行政標準コード・"
+            "国土交通部の法定洞コード 2026-06-30 版で 16 件を確認）。",
+            "ISO 3166-2:KR は 2023-11-23 以降更新がなく、全南光州統合特別市のコードが無い。"
+            "このため KR-12 は ISO コードではなく、韓国の行政区域コード（法定洞コードの市道 2 桁）"
+            "12 を ISO と同じ形にしたもの。ISO がコードを割り当てても data-code は変えず、"
+            "regions.json の iso_3166_2 に記録する。",
+            "行政洞（3,558）を市道単位に統合して作成。軍威郡（2023-07-01 に大邱へ編入）を反映。",
+            "リアンクール岩礁（独島/竹島）は、この縮尺では表示できない小島のため描画しない。"
+            "帰属についての立場を示すものではない。",
         ],
     },
     "ca": {
@@ -582,6 +656,19 @@ def load_regions(key, cfg):
                 raise SystemExit(f"gb: {code} の英語名が ONS と違う: {p['ITL225NM']!r}")
             regions[code]["polys"].append(geom_polygons(feat["geometry"]))
             regions[code]["source_ids"].append(code)
+    elif src == "sgis":
+        by_admin = {v[3]: k for k, v in KR_NAMES.items()}
+        for feat in features:
+            p = feat["properties"]
+            code = by_admin.get(p["sido"])
+            if code is None:
+                raise SystemExit(f"kr: 名前表に無い市道コード {p['sido']} ({p['sidonm']})")
+            if p["sidonm"] != KR_NAMES[code][2]:
+                raise SystemExit(f"kr: {code} の市道名が違う: {p['sidonm']!r}")
+            regions[code]["polys"].append(geom_polygons(feat["geometry"]))
+            sid = f"sido {p['sido']} ({p['sidonm']})"
+            if sid not in regions[code]["source_ids"]:
+                regions[code]["source_ids"].append(sid)
     elif src == "ura":
         by_ura = {v[2]: k for k, v in SG_NAMES.items()}
         for feat in features:
@@ -1039,11 +1126,14 @@ def build_country(key):
             row["stats_nz_code"] = NZ_NAMES[code][2]
         if key == "ie":
             row["name_ga"], row["province"] = IE_NAMES[code][2], IE_NAMES[code][3]
+        if key == "kr":
+            row["name_ko"], row["kr_admin_code"] = KR_NAMES[code][2], KR_NAMES[code][3]
+            row["iso_3166_2"] = None if code in KR_NO_ISO else code
         row["source_ids"] = regions[code]["source_ids"]
         row["marker"] = {v[0].replace("map-", "").replace(".svg", ""):
                          results[v[0]][code]["marker"] is not None for v in VARIANTS}
         notes = []
-        if cfg.get("dissolve") and len(regions[code]["source_ids"]) > 1:
+        if cfg.get("dissolve") and len(regions[code]["source_names"]) > 1:
             notes.append("Natural Earth の " + "・".join(regions[code]["source_names"])
                          + " を 1 県に統合")
         if code in cfg.get("region_notes", {}):
@@ -1101,7 +1191,8 @@ def write_code_tables(docs):
                           for e in doc["excluded"])
             lines.append(f"- 分母に含めない: {ex}")
         lines.append("")
-        extra = {"nz": "Stats NZ コード", "ie": "アイルランド語名 / 地方"}.get(key, "元データの ID")
+        extra = {"nz": "Stats NZ コード", "ie": "アイルランド語名 / 地方",
+                 "kr": "韓国語名 / 行政区域コード / ISO 3166-2"}.get(key, "元データの ID")
         lines.append(f"| data-code | 日本語名 | English name | {extra} |")
         lines.append("|---|---|---|---|")
         for r in doc["regions"]:
@@ -1109,6 +1200,8 @@ def write_code_tables(docs):
                 ex = r["stats_nz_code"]
             elif key == "ie":
                 ex = f"{r['name_ga']} / {r['province']}"
+            elif key == "kr":
+                ex = f"{r['name_ko']} / {r['kr_admin_code']} / {r['iso_3166_2'] or '未割当'}"
             else:
                 ex = ", ".join(r["source_ids"])
             lines.append(f"| `{r['code']}` | {r['name_ja']} | {r['name_en']} | {ex} |")
