@@ -2,6 +2,7 @@ const countries = [
   { key: "us", label: "アメリカ" },
   { key: "gb", label: "イギリス" },
   { key: "kr", label: "韓国" },
+  { key: "cn", label: "中国" },
   { key: "ca", label: "カナダ" },
   { key: "au", label: "オーストラリア" },
   { key: "nz", label: "ニュージーランド" },

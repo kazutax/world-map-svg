@@ -3,7 +3,7 @@
 
 ベースデータ (data/ に無ければダウンロード):
   - Natural Earth 1:10m Admin 1 (大きな湖を除いた版) v5.1.2 (パブリックドメイン)
-      us / ca / au / nz / ie
+      us / ca / au / nz / ie / cn
   - ONS International Territorial Level 2 (January 2025) Boundaries UK BUC
       gb (Open Government Licence v3.0)
   - URA Master Plan 2025 Region Boundary (No Sea) (data.gov.sg)
@@ -299,6 +299,27 @@ KR_NAMES = {
     "KR-49": ("済州特別自治道", "Jeju", "제주특별자치도", "50"),
 }
 KR_NO_ISO = {"KR-12"}
+# ISO 3166-2:CN の 34 件から CN-TW・CN-HK・CN-MO を除いた 31 件。英語名は Natural Earth の name_en
+CN_NAMES = {
+    "CN-BJ": ("北京市", "Beijing"), "CN-TJ": ("天津市", "Tianjin"),
+    "CN-SH": ("上海市", "Shanghai"), "CN-CQ": ("重慶市", "Chongqing"),
+    "CN-HE": ("河北省", "Hebei"), "CN-SX": ("山西省", "Shanxi"),
+    "CN-LN": ("遼寧省", "Liaoning"), "CN-JL": ("吉林省", "Jilin"),
+    "CN-HL": ("黒竜江省", "Heilongjiang"), "CN-JS": ("江蘇省", "Jiangsu"),
+    "CN-ZJ": ("浙江省", "Zhejiang"), "CN-AH": ("安徽省", "Anhui"),
+    "CN-FJ": ("福建省", "Fujian"), "CN-JX": ("江西省", "Jiangxi"),
+    "CN-SD": ("山東省", "Shandong"), "CN-HA": ("河南省", "Henan"),
+    "CN-HB": ("湖北省", "Hubei"), "CN-HN": ("湖南省", "Hunan"),
+    "CN-GD": ("広東省", "Guangdong"), "CN-HI": ("海南省", "Hainan"),
+    "CN-SC": ("四川省", "Sichuan"), "CN-GZ": ("貴州省", "Guizhou"),
+    "CN-YN": ("雲南省", "Yunnan"), "CN-SN": ("陝西省", "Shaanxi"),
+    "CN-GS": ("甘粛省", "Gansu"), "CN-QH": ("青海省", "Qinghai"),
+    "CN-NM": ("内モンゴル自治区", "Inner Mongolia"),
+    "CN-GX": ("広西チワン族自治区", "Guangxi"),
+    "CN-XZ": ("チベット自治区", "Tibet"),
+    "CN-NX": ("寧夏回族自治区", "Ningxia"),
+    "CN-XJ": ("新疆ウイグル自治区", "Xinjiang"),
+}
 # URA の REGION_C -> 安定 ID
 SG_NAMES = {
     "SG-CR": ("中央地域", "Central Region", "CR"),
@@ -399,6 +420,35 @@ COUNTRIES = {
             "行政洞（3,558）を市道単位に統合して作成。軍威郡（2023-07-01 に大邱へ編入）を反映。",
             "リアンクール岩礁（独島/竹島）は、この縮尺では表示できない小島のため描画しない。"
             "帰属についての立場を示すものではない。",
+        ],
+    },
+    "cn": {
+        "country": "CN", "name_ja": "中国", "name_en": "China",
+        "division_ja": "22 省・5 自治区・4 直轄市（台湾・香港・マカオを除く）",
+        "division_en": "22 provinces, 5 autonomous regions and 4 municipalities "
+                       "(excluding Taiwan, Hong Kong and Macau)",
+        "id_scheme": "ISO 3166-2:CN（CN-TW・CN-HK・CN-MO を除く 31 件）",
+        "source": "ne", "ne_adm0": "CHN",
+        "names": CN_NAMES,
+        "check_ne_name_en": True,
+        "projection": dict(conic((25, 47), -105, (0, 35))),
+        "excluded": [
+            ("台湾", "Taiwan", "CN-TW", "区画に入れない。世界地図でも中国と別（TW、class=\"territory\"）"),
+            ("香港", "Hong Kong", "CN-HK", "区画に入れない"),
+            ("マカオ", "Macau", "CN-MO", "区画に入れない"),
+            ("西沙（パラセル）諸島", "Paracel Islands", "",
+             "31 区分に属さない Natural Earth のフィーチャ。海南省へ吸収せず、描画もしない"
+             "（世界地図でも描画されない大きさ）"),
+        ],
+        "notes": [
+            "Natural Earth の第 1 級行政界のうち、ISO 3166-2:CN の 31 件に当たる 31 フィーチャを"
+            "そのまま使った（台湾・香港・マカオは Natural Earth でも別の国のフィーチャで、"
+            "中国側には入っていない）。",
+            "31 区分を合わせた外形は、世界地図の CN の元データ（Natural Earth Admin 0 の CHN）と"
+            "一致する（0.05 度格子で差 0）。九段線は描かない。",
+            "世界地図（map-*.svg）では、Natural Earth で主権国が中国の香港とマカオは CN の"
+            "グループに含まれている（台湾は TW の territory として別）。区画では香港とマカオを"
+            "描かないため、この 2 か所だけ世界地図の CN と外形が違う。",
         ],
     },
     "ca": {
@@ -643,6 +693,8 @@ def load_regions(key, cfg):
             code = p["iso_3166_2"]
             if code not in regions:
                 continue
+            if cfg.get("check_ne_name_en") and p["name_en"] != cfg["names"][code][1]:
+                raise SystemExit(f"{key}: {code} の英語名が Natural Earth と違う: {p['name_en']!r}")
             regions[code]["polys"].append(geom_polygons(feat["geometry"]))
             regions[code]["source_ids"].append(p["adm1_code"])
             regions[code].setdefault("source_names", []).append(f"{p['name']} ({p['type_en']})")

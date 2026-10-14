@@ -5,7 +5,7 @@
 
 Demo: https://kazutax.github.io/world-map-svg/demo/
 
-国の中の区画（米国の州、英国の ITL2 地域など 8 か国）の SVG もあります → [国の中の区画](#国の中の区画subdivisions)（Demo: https://kazutax.github.io/world-map-svg/demo/subdivisions.html）
+国の中の区画（米国の州、英国の ITL2 地域など 9 か国）の SVG もあります → [国の中の区画](#国の中の区画subdivisions)（Demo: https://kazutax.github.io/world-map-svg/demo/subdivisions.html）
 
 ![map-full.svg](map-full.svg)
 
@@ -231,6 +231,7 @@ subdivisions/
 | アメリカ | `us` | 50 州とコロンビア特別区。アラスカ・ハワイを含み、プエルトリコなどの海外領域は含めない | 51 | ISO 3166-2:US（`US-CA`、`US-DC`） | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
 | イギリス | `gb` | ONS の ITL2（2025 年 1 月の分類）。England の細分を含み、北アイルランド（`TLN0`）を含む | 46 | ONS の ITL 2025 コード（`TLC3` … `TLN0`） | ONS ITL2 (January 2025) BUC | Open Government Licence v3.0 |
 | 韓国 | `kr` | 第 1 級の 16 区分（特別市、広域市、特別自治市、統合特別市、道、特別自治道。2026-07-01 の光州・全南統合後） | 16 | ISO 3166-2:KR（`KR-11`）。ISO 未割当の全南光州統合特別市は `KR-12`（下記） | vuski/admdongkor 行政洞境界 ver20260701（統計庁 SGIS を加工） | CC BY 4.0（原資料は公共ヌリ第 1 類型） |
+| 中国 | `cn` | 22 省、5 自治区、4 直轄市。台湾・香港・マカオは含めない | 31 | ISO 3166-2:CN（`CN-BJ`、`CN-GD`）。`CN-TW`・`CN-HK`・`CN-MO` は使わない | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
 | カナダ | `ca` | 10 州と 3 準州 | 13 | ISO 3166-2:CA（`CA-ON`） | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
 | オーストラリア | `au` | 6 州、ACT、NT。クリスマス島などの海外領域とジャービス湾特別地域は含めない | 8 | ISO 3166-2:AU（`AU-NSW`） | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
 | ニュージーランド | `nz` | 16 の地方（regional council の区域）。チャタム諸島は含めない | 16 | ISO 3166-2:NZ（`NZ-AUK`）。Stats NZ の地方コードを `stats_nz_code` に併記 | Natural Earth Admin 1 v5.1.2 | パブリックドメイン |
@@ -241,6 +242,8 @@ subdivisions/
 * 各国の区分の一覧（`data-code`・日本語名・英語名）は [subdivisions/README.md](subdivisions/README.md) と各 `regions.json` にあります。
 * **韓国の `KR-12` について**: 2026-07-01 に光州広域市（`KR-29`）と全羅南道（`KR-46`）が統合されて「全南光州統合特別市」が発足しました。ISO 3166-2:KR は 2023-11-23 以降更新がなく、この区分のコードはまだありません（2026-10 時点。Debian iso-codes・Unicode CLDR・Wikidata でも未登録）。そこで、韓国政府が割り当てた行政区域コード（行政標準コード・法定洞コードの市道 2 桁）`12` を、他の区分と同じ `KR-` 形式にして `KR-12` としています。**`KR-12` は ISO コードではありません。** ISO がコードを割り当てても `data-code` は変えず、`regions.json` の `iso_3166_2` に記録します（他の 15 区分は `iso_3166_2` が `data-code` と同じ値、`KR-12` は `null`）。韓国の行政区域コードは `kr_admin_code` に併記しています（江原 `51`・全北 `52`・済州 `50`・世宗 `36` などは ISO の番号と違うので注意）。
 * 韓国の境界は行政洞（3,558）を市道単位に統合したもので、2023-07-01 に大邱へ編入された軍威郡も反映しています。
+* **中国（`cn`）について**: Natural Earth の第 1 級行政界のうち ISO 3166-2:CN の 31 件に当たるフィーチャをそのまま使っています（台湾・香港・マカオは Natural Earth でも中国とは別のフィーチャで、中国側には入っていません）。31 区分を合わせた外形は、世界地図の `CN` の元データ（Natural Earth Admin 0 の CHN）と一致します。九段線、台湾、香港、マカオは描きません。西沙（パラセル）諸島は 31 区分に属さない別フィーチャのため、海南省へ吸収せず描画もしていません（世界地図でも描画されない大きさです）。
+  * 世界地図（`map-*.svg`）では、Natural Earth で主権国が中国の香港とマカオは `CN` のグループに含まれています（台湾は `TW` の `territory` として別）。区画では香港とマカオを描かないため、この 2 か所だけ世界地図の `CN` と外形が異なります。
 
 ### SVG の構造
 
@@ -309,6 +312,7 @@ $ python3 scripts/validate_subdivisions.py
 us: OK (US 分母 51)
 gb: OK (GB 分母 46)
 kr: OK (KR 分母 16)
+cn: OK (CN 分母 31)
 ca: OK (CA 分母 13)
 au: OK (AU 分母 8)
 nz: OK (NZ 分母 16)
@@ -324,7 +328,7 @@ report -> reports/subdivisions-coverage.md
 * `<title>` が `regions.json` の「name_ja / name_en」と違う
 * 塗れない区分（パスもマーカーも無い、または小さすぎてマーカーも無い）
 * 区画ファイルに `class="country"` が混ざっている
-* 除外すると決めた領域（米国・豪州の海外領域、チャタム諸島、`ie` に入った北アイルランド、シンガポールの計画区域 55、英国の旧 41 地域のコード、統合前の光州広域市・全羅南道など）が分母に数えられている。代表地点（サンフアン、ベルファスト、旧光州市庁、軍威郡など）を投影して、入るべき区分に入り、除外した領域はどの区分にも含まれないことも確かめます
+* 除外すると決めた領域（米国・豪州の海外領域、チャタム諸島、`ie` に入った北アイルランド、シンガポールの計画区域 55、英国の旧 41 地域のコード、統合前の光州広域市・全羅南道、中国の `CN-TW`・`CN-HK`・`CN-MO` と台湾・香港・マカオなど）が分母に数えられている。代表地点（サンフアン、ベルファスト、旧光州市庁、軍威郡、台北、香港、マカオなど）を投影して、入るべき区分に入り、除外した領域はどの区分にも含まれないことも確かめます
 * `M` / `L` / `Z` 以外のパスコマンド、`evenodd` でない、マーカーが親の `fill` を継承しない
 * mobile が簡略化されていない・線が太くない・マーカーが大きくない、各区分の最大ポリゴンが失われている
 * アメリカのはめ込み（アラスカ・ハワイ）が本土と重なる、区切り線が区分を横切る
@@ -334,7 +338,7 @@ report -> reports/subdivisions-coverage.md
 ### ビルド・再生成
 
 ```console
-$ python3 scripts/build_subdivisions.py         # 全 8 か国（data/ に元データが無ければダウンロード）
+$ python3 scripts/build_subdivisions.py         # 全 9 か国（data/ に元データが無ければダウンロード）
 $ python3 scripts/build_subdivisions.py us ie   # 指定した国だけ
 $ python3 scripts/validate_subdivisions.py
 ```
@@ -345,12 +349,12 @@ $ python3 scripts/validate_subdivisions.py
 
 本リポジトリのファイル（SVG・JSON・スクリプト）は [MIT License](LICENSE) です。ただし区画の境界は次の地理データに由来し、その利用条件は MIT とは別にかかります。いずれも商用アプリへの同梱と改変が認められています。
 
-| 国 | データ | 版 | ライセンス | 帰属表示 |
+| 国 | データ | 版（取得日） | ライセンス | 帰属表示 |
 |---|---|---|---|---|
-| `us` `ca` `au` `nz` `ie` | [Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/) 1:10m Admin 1 – States, Provinces（大きな湖を除いた版） | v5.1.2 | パブリックドメイン | 不要（本リポジトリでは出典として明記） |
-| `gb` | [ONS](https://geoportal.statistics.gov.uk/) International Territorial Level 2 (January 2025) Boundaries UK BUC | ITL 2025 | [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) | 必要: 「Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2025」 |
-| `kr` | [vuski/admdongkor](https://github.com/vuski/admdongkor) 行政洞境界 ver20260701（原資料: [統計庁 SGIS](https://sgis.kostat.go.kr)） | 2026-07-01 時点 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)（原資料は[公共ヌリ第 1 類型](https://www.kogl.or.kr/info/licenseType1.do)） | 必要: 「This data is derived from administrative-dong boundaries released by Statistics Korea SGIS (https://sgis.kostat.go.kr) under KOGL Type 1, modified by vuski/admdongkor (https://github.com/vuski/admdongkor), distributed under CC BY 4.0. Dissolved into 16 first-level divisions by kazutax/world-map-svg.」 |
-| `sg` | [URA](https://data.gov.sg/datasets/d_4ce0038f7ac689652350bb91b7fb92ed/view) Master Plan 2025 Region Boundary (No Sea)（data.gov.sg） | Master Plan 2025 | [Singapore Open Data Licence v1.0](https://data.gov.sg/open-data-licence) | 必要: 「Contains information from Master Plan 2025 Region Boundary (No Sea) accessed on 2026-10-13 from data.gov.sg which is made available under the terms of the Singapore Open Data Licence version 1.0 https://data.gov.sg/open-data-licence」 |
+| `us` `ca` `au` `nz` `ie` `cn` | [Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/) 1:10m Admin 1 – States, Provinces（大きな湖を除いた版） | v5.1.2（2026-10-13） | パブリックドメイン | 不要（本リポジトリでは出典として明記） |
+| `gb` | [ONS](https://geoportal.statistics.gov.uk/) International Territorial Level 2 (January 2025) Boundaries UK BUC | ITL 2025（2026-10-13） | [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) | 必要: 「Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2025」 |
+| `kr` | [vuski/admdongkor](https://github.com/vuski/admdongkor) 行政洞境界 ver20260701（原資料: [統計庁 SGIS](https://sgis.kostat.go.kr)） | 2026-07-01 時点（2026-10-13） | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)（原資料は[公共ヌリ第 1 類型](https://www.kogl.or.kr/info/licenseType1.do)） | 必要: 「This data is derived from administrative-dong boundaries released by Statistics Korea SGIS (https://sgis.kostat.go.kr) under KOGL Type 1, modified by vuski/admdongkor (https://github.com/vuski/admdongkor), distributed under CC BY 4.0. Dissolved into 16 first-level divisions by kazutax/world-map-svg.」 |
+| `sg` | [URA](https://data.gov.sg/datasets/d_4ce0038f7ac689652350bb91b7fb92ed/view) Master Plan 2025 Region Boundary (No Sea)（data.gov.sg） | Master Plan 2025（2026-10-13） | [Singapore Open Data Licence v1.0](https://data.gov.sg/open-data-licence) | 必要: 「Contains information from Master Plan 2025 Region Boundary (No Sea) accessed on 2026-10-13 from data.gov.sg which is made available under the terms of the Singapore Open Data Licence version 1.0 https://data.gov.sg/open-data-licence」 |
 
 * `gb`・`kr`・`sg` を使うアプリやサイトでは、上の帰属表示を利用者に見える場所（クレジット画面など）に出してください。Singapore Open Data Licence は、URA などの公的機関が推奨・承認しているように見せることも禁じています。
 * 帰属表示の文言は各 SVG の `<desc>` と `regions.json` の `source.attribution` にも入れています。
@@ -358,3 +362,5 @@ $ python3 scripts/validate_subdivisions.py
 ### 免責事項（区画）
 
 区画の地図は「訪問した地域の塗り分け」のための簡略図です。境界線・区分・名称は上記の出典データの解釈に基づき、**国家・地域の境界、帰属、地位に関するいかなる政治的立場も表明するものではありません。**北アイルランドを `gb` に収めているのは英国統計局の地域区分（ITL）に、アイルランドの 26 県は ISO 3166-2:IE に従った、塗り分けの都合による整理です。離島の一部（北西ハワイ諸島、ロードハウ島、マッコーリー島など）は、区分には属したまま描画を省略しています。リアンクール岩礁（独島/竹島）も、この縮尺では表示できない小島のため描画していません。帰属についての立場を示すものではありません。
+
+中国の区画も同じ趣旨の、塗り分けのための簡略図です。台湾・香港・マカオを描かないこと、九段線や南シナ海の島しょを描かないこと、国境の線の引き方は、本リポジトリの世界地図（Natural Earth のデフォルト解釈）にそろえた表示上の整理であり、**いかなる政治的立場も表明するものではありません。**

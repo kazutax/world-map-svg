@@ -120,6 +120,32 @@ SPEC = {
             ("対馬 (日本)", 129.290, 34.200, None),
         ],
     },
+    "cn": {
+        "country": "CN", "denominator": 31, "status": "released",
+        # ISO 3166-2:CN の 34 件から CN-TW・CN-HK・CN-MO を除いた 31 件
+        "codes": [f"CN-{s}" for s in
+                  "AH BJ CQ FJ GD GS GX GZ HA HB HE HI HL HN JL JS JX LN NM NX QH SC SD SH "
+                  "SN SX TJ XJ XZ YN ZJ".split()],
+        "excluded_codes": ["CN-TW", "CN-HK", "CN-MO", "TW", "HK", "MO", "CN", "CN-X01~"],
+        "excluded_names": ["taiwan", "hong kong", "macau", "macao", "paracel", "台湾", "臺灣",
+                           "臺湾", "香港", "マカオ", "澳門", "澳门", "パラセル", "西沙"],
+        "sentinels": [
+            ("台北", 121.56, 25.04, None),
+            ("高雄", 120.30, 22.62, None),
+            ("金門 (台湾)", 118.35, 24.44, None),
+            ("香港 (尖沙咀)", 114.17, 22.30, None),
+            ("香港 (ランタオ島)", 113.94, 22.26, None),
+            ("マカオ", 113.55, 22.19, None),
+            ("西沙諸島 (永興島)", 112.34, 16.83, None),
+            ("北京", 116.40, 39.90, "CN-BJ"),
+            ("上海", 121.47, 31.23, "CN-SH"),
+            ("広州", 113.26, 23.13, "CN-GD"),
+            ("海口 (海南島)", 110.33, 20.03, "CN-HI"),
+            ("フフホト", 111.75, 40.84, "CN-NM"),
+            ("ウルムチ", 87.62, 43.83, "CN-XJ"),
+            ("ラサ", 91.13, 29.65, "CN-XZ"),
+        ],
+    },
     "ca": {
         "country": "CA", "denominator": 13, "status": "released",
         "codes": [f"CA-{s}" for s in "AB BC MB NB NL NS NT NU ON PE QC SK YT".split()],

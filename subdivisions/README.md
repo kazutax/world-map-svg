@@ -150,6 +150,49 @@
 | `KR-49` | 済州特別自治道 | Jeju | 제주특별자치도 / 50 / KR-49 |
 | `KR-50` | 世宗特別自治市 | Sejong | 세종특별자치시 / 36 / KR-50 |
 
+## 中国（`cn`）: 22 省・5 自治区・4 直轄市（台湾・香港・マカオを除く）、分母 31
+
+- ID: ISO 3166-2:CN（CN-TW・CN-HK・CN-MO を除く 31 件）
+- 出典: [Natural Earth 1:10m Cultural Vectors, Admin 1 – States, Provinces (large lakes removed)](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/)（v5.1.2 (ne_10m_admin_1_states_provinces_lakes)、Public Domain）
+- Natural Earth の第 1 級行政界のうち、ISO 3166-2:CN の 31 件に当たる 31 フィーチャをそのまま使った（台湾・香港・マカオは Natural Earth でも別の国のフィーチャで、中国側には入っていない）。
+- 31 区分を合わせた外形は、世界地図の CN の元データ（Natural Earth Admin 0 の CHN）と一致する（0.05 度格子で差 0）。九段線は描かない。
+- 世界地図（map-*.svg）では、Natural Earth で主権国が中国の香港とマカオは CN のグループに含まれている（台湾は TW の territory として別）。区画では香港とマカオを描かないため、この 2 か所だけ世界地図の CN と外形が違う。
+- 分母に含めない: 台湾（CN-TW）、香港（CN-HK）、マカオ（CN-MO）、西沙（パラセル）諸島
+
+| data-code | 日本語名 | English name | 元データの ID |
+|---|---|---|---|
+| `CN-AH` | 安徽省 | Anhui | CHN-1179 |
+| `CN-BJ` | 北京市 | Beijing | CHN-1155 |
+| `CN-CQ` | 重慶市 | Chongqing | CHN-1154 |
+| `CN-FJ` | 福建省 | Fujian | CHN-1178 |
+| `CN-GD` | 広東省 | Guangdong | CHN-1180 |
+| `CN-GS` | 甘粛省 | Gansu | CHN-1150 |
+| `CN-GX` | 広西チワン族自治区 | Guangxi | CHN-1152 |
+| `CN-GZ` | 貴州省 | Guizhou | CHN-1153 |
+| `CN-HA` | 河南省 | Henan | CHN-1812 |
+| `CN-HB` | 湖北省 | Hubei | CHN-1807 |
+| `CN-HE` | 河北省 | Hebei | CHN-1811 |
+| `CN-HI` | 海南省 | Hainan | CHN-1775 |
+| `CN-HL` | 黒竜江省 | Heilongjiang | CHN-1839 |
+| `CN-HN` | 湖南省 | Hunan | CHN-1808 |
+| `CN-JL` | 吉林省 | Jilin | CHN-1828 |
+| `CN-JS` | 江蘇省 | Jiangsu | CHN-1818 |
+| `CN-JX` | 江西省 | Jiangxi | CHN-1817 |
+| `CN-LN` | 遼寧省 | Liaoning | CHN-1813 |
+| `CN-NM` | 内モンゴル自治区 | Inner Mongolia | CHN-1838 |
+| `CN-NX` | 寧夏回族自治区 | Ningxia | CHN-1803 |
+| `CN-QH` | 青海省 | Qinghai | CHN-1151 |
+| `CN-SC` | 四川省 | Sichuan | CHN-1809 |
+| `CN-SD` | 山東省 | Shandong | CHN-1814 |
+| `CN-SH` | 上海市 | Shanghai | CHN-1819 |
+| `CN-SN` | 陝西省 | Shaanxi | CHN-1804 |
+| `CN-SX` | 山西省 | Shanxi | CHN-1805 |
+| `CN-TJ` | 天津市 | Tianjin | CHN-1816 |
+| `CN-XJ` | 新疆ウイグル自治区 | Xinjiang | CHN-1756 |
+| `CN-XZ` | チベット自治区 | Tibet | CHN-1662 |
+| `CN-YN` | 雲南省 | Yunnan | CHN-1810 |
+| `CN-ZJ` | 浙江省 | Zhejiang | CHN-1820 |
+
 ## カナダ（`ca`）: 10 州と 3 準州、分母 13
 
 - ID: ISO 3166-2:CA

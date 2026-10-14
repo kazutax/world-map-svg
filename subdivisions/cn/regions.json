@@ -1,0 +1,544 @@
+{
+  "country": "CN",
+  "country_name_ja": "中国",
+  "country_name_en": "China",
+  "division_ja": "22 省・5 自治区・4 直轄市（台湾・香港・マカオを除く）",
+  "division_en": "22 provinces, 5 autonomous regions and 4 municipalities (excluding Taiwan, Hong Kong and Macau)",
+  "denominator": 31,
+  "id_scheme": "ISO 3166-2:CN（CN-TW・CN-HK・CN-MO を除く 31 件）",
+  "source": {
+    "name": "Natural Earth 1:10m Cultural Vectors, Admin 1 – States, Provinces (large lakes removed)",
+    "publisher": "Natural Earth",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "download_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_1_states_provinces_lakes.geojson",
+    "version": "v5.1.2 (ne_10m_admin_1_states_provinces_lakes)",
+    "license": "Public Domain",
+    "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+    "retrieved": "2026-10-13",
+    "sha256": "ff5e330cf097a639cc413ab849814d605ba76307235e3a9eba5d1aa0491beba1"
+  },
+  "projection": {
+    "main": {
+      "type": "conicEqualArea",
+      "parallels": [
+        25,
+        47
+      ],
+      "rotate": -105,
+      "center": [
+        0,
+        35
+      ],
+      "scale": 1288.983529,
+      "translate": [
+        542.730255,
+        454.967185
+      ]
+    },
+    "viewBox": [
+      0,
+      0,
+      1000,
+      844
+    ]
+  },
+  "excluded": [
+    {
+      "name_ja": "台湾",
+      "name_en": "Taiwan",
+      "code": "CN-TW",
+      "reason": "区画に入れない。世界地図でも中国と別（TW、class=\"territory\"）"
+    },
+    {
+      "name_ja": "香港",
+      "name_en": "Hong Kong",
+      "code": "CN-HK",
+      "reason": "区画に入れない"
+    },
+    {
+      "name_ja": "マカオ",
+      "name_en": "Macau",
+      "code": "CN-MO",
+      "reason": "区画に入れない"
+    },
+    {
+      "name_ja": "西沙（パラセル）諸島",
+      "name_en": "Paracel Islands",
+      "code": "",
+      "reason": "31 区分に属さない Natural Earth のフィーチャ。海南省へ吸収せず、描画もしない（世界地図でも描画されない大きさ）"
+    }
+  ],
+  "notes": [
+    "Natural Earth の第 1 級行政界のうち、ISO 3166-2:CN の 31 件に当たる 31 フィーチャをそのまま使った（台湾・香港・マカオは Natural Earth でも別の国のフィーチャで、中国側には入っていない）。",
+    "31 区分を合わせた外形は、世界地図の CN の元データ（Natural Earth Admin 0 の CHN）と一致する（0.05 度格子で差 0）。九段線は描かない。",
+    "世界地図（map-*.svg）では、Natural Earth で主権国が中国の香港とマカオは CN のグループに含まれている（台湾は TW の territory として別）。区画では香港とマカオを描かないため、この 2 か所だけ世界地図の CN と外形が違う。"
+  ],
+  "regions": [
+    {
+      "code": "CN-AH",
+      "country": "CN",
+      "name_ja": "安徽省",
+      "name_en": "Anhui",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1179"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-BJ",
+      "country": "CN",
+      "name_ja": "北京市",
+      "name_en": "Beijing",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1155"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-CQ",
+      "country": "CN",
+      "name_ja": "重慶市",
+      "name_en": "Chongqing",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1154"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-FJ",
+      "country": "CN",
+      "name_ja": "福建省",
+      "name_en": "Fujian",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1178"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-GD",
+      "country": "CN",
+      "name_ja": "広東省",
+      "name_en": "Guangdong",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1180"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-GS",
+      "country": "CN",
+      "name_ja": "甘粛省",
+      "name_en": "Gansu",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1150"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-GX",
+      "country": "CN",
+      "name_ja": "広西チワン族自治区",
+      "name_en": "Guangxi",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1152"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-GZ",
+      "country": "CN",
+      "name_ja": "貴州省",
+      "name_en": "Guizhou",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1153"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-HA",
+      "country": "CN",
+      "name_ja": "河南省",
+      "name_en": "Henan",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1812"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-HB",
+      "country": "CN",
+      "name_ja": "湖北省",
+      "name_en": "Hubei",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1807"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-HE",
+      "country": "CN",
+      "name_ja": "河北省",
+      "name_en": "Hebei",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1811"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-HI",
+      "country": "CN",
+      "name_ja": "海南省",
+      "name_en": "Hainan",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1775"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-HL",
+      "country": "CN",
+      "name_ja": "黒竜江省",
+      "name_en": "Heilongjiang",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1839"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-HN",
+      "country": "CN",
+      "name_ja": "湖南省",
+      "name_en": "Hunan",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1808"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-JL",
+      "country": "CN",
+      "name_ja": "吉林省",
+      "name_en": "Jilin",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1828"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-JS",
+      "country": "CN",
+      "name_ja": "江蘇省",
+      "name_en": "Jiangsu",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1818"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-JX",
+      "country": "CN",
+      "name_ja": "江西省",
+      "name_en": "Jiangxi",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1817"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-LN",
+      "country": "CN",
+      "name_ja": "遼寧省",
+      "name_en": "Liaoning",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1813"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-NM",
+      "country": "CN",
+      "name_ja": "内モンゴル自治区",
+      "name_en": "Inner Mongolia",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1838"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-NX",
+      "country": "CN",
+      "name_ja": "寧夏回族自治区",
+      "name_en": "Ningxia",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1803"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-QH",
+      "country": "CN",
+      "name_ja": "青海省",
+      "name_en": "Qinghai",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1151"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-SC",
+      "country": "CN",
+      "name_ja": "四川省",
+      "name_en": "Sichuan",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1809"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-SD",
+      "country": "CN",
+      "name_ja": "山東省",
+      "name_en": "Shandong",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1814"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-SH",
+      "country": "CN",
+      "name_ja": "上海市",
+      "name_en": "Shanghai",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1819"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-SN",
+      "country": "CN",
+      "name_ja": "陝西省",
+      "name_en": "Shaanxi",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1804"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-SX",
+      "country": "CN",
+      "name_ja": "山西省",
+      "name_en": "Shanxi",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1805"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-TJ",
+      "country": "CN",
+      "name_ja": "天津市",
+      "name_en": "Tianjin",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1816"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-XJ",
+      "country": "CN",
+      "name_ja": "新疆ウイグル自治区",
+      "name_en": "Xinjiang",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1756"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-XZ",
+      "country": "CN",
+      "name_ja": "チベット自治区",
+      "name_en": "Tibet",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1662"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-YN",
+      "country": "CN",
+      "name_ja": "雲南省",
+      "name_en": "Yunnan",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1810"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    },
+    {
+      "code": "CN-ZJ",
+      "country": "CN",
+      "name_ja": "浙江省",
+      "name_en": "Zhejiang",
+      "included_in_svg": true,
+      "source_ids": [
+        "CHN-1820"
+      ],
+      "marker": {
+        "full": false,
+        "mobile": false
+      },
+      "notes": ""
+    }
+  ]
+}
